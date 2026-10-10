@@ -1,0 +1,51 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-jquery-ui/interacciones/draggable/constrain-movement/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Draggable - Constrain movement</title>
+    <link rel="stylesheet" href="../../../vendor/jquery-ui.css">
+    <link rel="stylesheet" href="../../../demos.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../../vendor/jquery-3.7.1.js"></script>
+    <script src="../../../vendor/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h3>Constrain movement along an axis:</h3>
+
+    <div id="draggable" class="draggable ui-widget-content">
+        <p>I can be dragged only vertically</p>
+    </div>
+
+    <div id="draggable2" class="draggable ui-widget-content">
+        <p>I can be dragged only horizontally</p>
+    </div>
+
+    <h3>Or to within another DOM element:</h3>
+
+    <div id="containment-wrapper">
+        <div id="draggable3" class="draggable ui-widget-content">
+            <p>I'm contained within the box</p>
+        </div>
+
+        <div class="draggable ui-widget-content">
+            <p id="draggable4" class="ui-widget-header">I'm contained within my parent</p>
+        </div>
+    </div>
+
+    <div class="demo-description">
+        <p>Constrain the movement of each draggable by defining the boundaries of the draggable area. Set the <code>axis</code> option to limit the draggable's path to the x- or y-axis, or use the <code>containment</code> option to specify a parent DOM element or a jQuery selector, like 'document.'</p>
+    </div>
+
+</body>
+
+</html>

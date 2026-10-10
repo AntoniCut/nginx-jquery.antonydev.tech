@@ -1,0 +1,40 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-jquery-ui/interacciones/draggable/events/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Draggable - Events</title>
+    <link rel="stylesheet" href="../../../vendor/jquery-ui.css">
+    <link rel="stylesheet" href="../../../demos.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="../../../vendor/jquery-3.7.1.js"></script>
+    <script src="../../../vendor/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="draggable" class="ui-widget ui-widget-content">
+
+        <p>Drag me to trigger the chain of events.</p>
+
+        <ul class="ui-helper-reset">
+            <li id="event-start" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-play"></span>"start" invoked <span class="count">0</span>x</li>
+            <li id="event-drag" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-arrow-4"></span>"drag" invoked <span class="count">0</span>x</li>
+            <li id="event-stop" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-stop"></span>"stop" invoked <span class="count">0</span>x</li>
+        </ul>
+    </div>
+
+    <div class="demo-description">
+        <p>Layer functionality onto the draggable using the <code>start</code>, <code>drag</code>, and <code>stop</code> events. Start is fired at the start of the drag; drag during the drag; and stop when dragging stops.</p>
+    </div>
+
+</body>
+
+</html>
