@@ -1,0 +1,13 @@
+.elem {
+    width: 100%;
+    margin: 0 0 1rem;
+    padding: 1.5rem;
+    background-color: #99f;
+    border-radius: var(--radius);
+}
+
+@media (min-width: 48rem) {
+    .elem {
+        width: 20rem;
+    }
+}

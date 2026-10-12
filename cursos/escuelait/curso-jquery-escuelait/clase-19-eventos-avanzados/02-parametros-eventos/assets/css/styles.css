@@ -1,0 +1,10 @@
+.uno,
+.dos {
+    margin: 0 0 0.75rem;
+    padding: 1rem 1.1rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
