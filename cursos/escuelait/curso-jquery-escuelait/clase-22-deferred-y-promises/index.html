@@ -1,0 +1,213 @@
+<!--
+    *  --------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-22-deferred-y-promises/index.html  -----  *
+    *  --------------------------------------------------------------------------------------------------------------  *
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 22 Deferred Y Promises</title>
+    <link rel="icon" href="../../../../assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #1c2430;
+            --muted: #5c6775;
+            --line: #d7dee7;
+            --paper: #f4f7fb;
+            --card: #ffffff;
+            --accent: #0769ad;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+        }
+
+        main {
+            width: min(720px, calc(100% - 2rem));
+            margin: 3rem auto;
+        }
+
+        header {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.75rem;
+        }
+
+        header img {
+            width: 3.25rem;
+            height: 3.25rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 650;
+            overflow-wrap: anywhere;
+        }
+
+        header p {
+            margin: 0.25rem 0 0;
+            color: var(--muted);
+        }
+
+        .volver {
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .volver:hover,
+        .volver:focus-visible {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        li a {
+            display: block;
+            padding: 1rem 1.15rem;
+            text-decoration: none;
+            color: inherit;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+        }
+
+        li a:hover,
+        li a:focus-visible {
+            border-color: var(--accent);
+            outline: none;
+        }
+
+        li a strong {
+            display: block;
+            color: var(--accent);
+            font-size: 1.05rem;
+            overflow-wrap: anywhere;
+        }
+
+        li a span {
+            display: block;
+            margin-top: 0.3rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .vacio {
+            margin: 0;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Curso jQuery Escuelait</a>
+        <header>
+            <img src="../../../../jquery-icon-folder.svg" alt="">
+            <div>
+                <h1>Clase 22 Deferred Y Promises</h1>
+                <p>12 elementos</p>
+            </div>
+        </header>
+
+        <ul>
+            <li>
+                <a href="01-deferred.html">
+                    <strong>01. Deferred</strong>
+                    <span>Página</span>
+                </a>
+            </li>
+            <li>
+                <a href="01-deferred.js">
+                    <strong>01. Deferred</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="02-promesas.html">
+                    <strong>02. Promesas</strong>
+                    <span>Página</span>
+                </a>
+            </li>
+            <li>
+                <a href="02-promesas.js">
+                    <strong>02. Promesas</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="03-funcion-como-promesa.html">
+                    <strong>03. Funcion Como Promesa</strong>
+                    <span>Página</span>
+                </a>
+            </li>
+            <li>
+                <a href="03-function-como-promesa.js">
+                    <strong>03. Function Como Promesa</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="04-aplicando-conceptos.html">
+                    <strong>04. Aplicando Conceptos</strong>
+                    <span>Página</span>
+                </a>
+            </li>
+            <li>
+                <a href="04-aplicando-conceptos.js">
+                    <strong>04. Aplicando Conceptos</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="_partial-01.html">
+                    <strong>Partial 01</strong>
+                    <span>Página</span>
+                </a>
+            </li>
+            <li>
+                <a href="_partial-02.html">
+                    <strong>Partial 02</strong>
+                    <span>Página</span>
+                </a>
+            </li>
+            <li>
+                <a href="Deferred%20Object%20-%20jQuery%20API%20Documentation.url">
+                    <strong>Deferred Object jQuery API Documentation</strong>
+                    <span>Archivo</span>
+                </a>
+            </li>
+            <li>
+                <a href="promises-backup.js">
+                    <strong>Promises Backup</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>

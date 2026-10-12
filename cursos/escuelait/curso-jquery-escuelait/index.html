@@ -1,0 +1,206 @@
+<!--
+    *  ---------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/index.html  -----  *
+    *  ---------------------------------------------------------------------------------  *
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscuelaIT — curso de jQuery</title>
+    <link rel="icon" href="../../../assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #1c2430;
+            --muted: #5c6775;
+            --line: #d7dee7;
+            --paper: #f4f7fb;
+            --card: #ffffff;
+            --accent: #0769ad;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+        }
+
+        main {
+            width: min(720px, calc(100% - 2rem));
+            margin: 3rem auto;
+        }
+
+        header {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.75rem;
+        }
+
+        header img {
+            width: 3.25rem;
+            height: 3.25rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 650;
+        }
+
+        header p {
+            margin: 0.25rem 0 0;
+            color: var(--muted);
+        }
+
+        .volver {
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .volver:hover,
+        .volver:focus-visible {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        li a {
+            display: block;
+            padding: 1rem 1.15rem;
+            text-decoration: none;
+            color: inherit;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+        }
+
+        li a:hover,
+        li a:focus-visible {
+            border-color: var(--accent);
+            outline: none;
+        }
+
+        li a strong {
+            display: block;
+            color: var(--accent);
+            font-size: 1.05rem;
+        }
+
+        li a span {
+            display: block;
+            margin-top: 0.3rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../../../">Cursos de jQuery</a>
+        <header>
+            <img src="../../../jquery-icon-folder.svg" alt="">
+            <div>
+                <h1>EscuelaIT</h1>
+                <p>Curso de jQuery, clases 18 a 28.</p>
+            </div>
+        </header>
+
+        <ul>
+            <li>
+                <a href="clase-18-formularios-ajax/">
+                    <strong>18. Formularios AJAX</strong>
+                    <span>Envío de formularios con AJAX y el PDF de la clase.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-19-eventos-avanzados/">
+                    <strong>19. Eventos avanzados</strong>
+                    <span>Eventos diferidos, parámetros, disparo y eventos personalizados.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-20-ajax-low-level/">
+                    <strong>20. AJAX de bajo nivel</strong>
+                    <span>POST, carga de scripts, buscador y selects combinados.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-21-practica-1/">
+                    <strong>21. Práctica 1</strong>
+                    <span>Práctica de login, con el enunciado en PDF.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-22-deferred-y-promises/">
+                    <strong>22. Deferred y promesas</strong>
+                    <span>Deferred, promesas y aplicación de esos conceptos.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-23-dudas-y-conceptos-3/">
+                    <strong>23. Dudas y conceptos</strong>
+                    <span>Validación de formularios y animaciones en bucle.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-24-template-system/">
+                    <strong>24. Sistema de plantillas</strong>
+                    <span>Handlebars y generación de DOM con jQuery.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-25-jquery-plugins/">
+                    <strong>25. Plugins de jQuery</strong>
+                    <span>Plugins básicos y plugins con Handlebars.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-26-variables-gestion-opciones-plugins/">
+                    <strong>26. Opciones de plugins</strong>
+                    <span>$.extend, FontSizer, Hilight y ajaxForm.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-1/">
+                    <strong>27. Plugins complejos, versión 1</strong>
+                    <span>Boilerplate y estructura de un plugin.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-2/">
+                    <strong>27. Plugins complejos, versión 2</strong>
+                    <span>Plugin de validación avanzada.</span>
+                </a>
+            </li>
+            <li>
+                <a href="clase-28-jquery-ui/">
+                    <strong>28. jQuery UI</strong>
+                    <span>Interacciones, empezando por draggable.</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>

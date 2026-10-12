@@ -1,0 +1,195 @@
+<!--
+    *  -------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-24-template-system/js/index.html  -----  *
+    *  -------------------------------------------------------------------------------------------------------------  *
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" href="../../../../../assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #1c2430;
+            --muted: #5c6775;
+            --line: #d7dee7;
+            --paper: #f4f7fb;
+            --card: #ffffff;
+            --accent: #0769ad;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+        }
+
+        main {
+            width: min(720px, calc(100% - 2rem));
+            margin: 3rem auto;
+        }
+
+        header {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.75rem;
+        }
+
+        header img {
+            width: 3.25rem;
+            height: 3.25rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 650;
+            overflow-wrap: anywhere;
+        }
+
+        header p {
+            margin: 0.25rem 0 0;
+            color: var(--muted);
+        }
+
+        .volver {
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .volver:hover,
+        .volver:focus-visible {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        li a {
+            display: block;
+            padding: 1rem 1.15rem;
+            text-decoration: none;
+            color: inherit;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+        }
+
+        li a:hover,
+        li a:focus-visible {
+            border-color: var(--accent);
+            outline: none;
+        }
+
+        li a strong {
+            display: block;
+            color: var(--accent);
+            font-size: 1.05rem;
+            overflow-wrap: anywhere;
+        }
+
+        li a span {
+            display: block;
+            margin-top: 0.3rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .vacio {
+            margin: 0;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Clase 24 Template System</a>
+        <header>
+            <img src="../../../../../jquery-icon-folder.svg" alt="">
+            <div>
+                <h1>JavaScript</h1>
+                <p>9 elementos</p>
+            </div>
+        </header>
+
+        <ul>
+            <li>
+                <a href="01-handlebars-compilar-basico.js">
+                    <strong>01. Handlebars Compilar Basico</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="02-handlebars-string-en-javascript.js">
+                    <strong>02. Handlebars String En Javascript</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="03-handlebars-script-en-html.js">
+                    <strong>03. Handlebars Script En HTML</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="04-jquery-generar-dom.js">
+                    <strong>04. jQuery Generar DOM</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="05-handlebars-template-externo-ajax.js">
+                    <strong>05. Handlebars Template Externo AJAX</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="06-handlebars-block-expressions.js">
+                    <strong>06. Handlebars Block Expressions</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="07-handlebars-path.js">
+                    <strong>07. Handlebars Path</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="08-handlebars-built-in-helpers.js">
+                    <strong>08. Handlebars Built In Helpers</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="handlebars-helpers.js">
+                    <strong>Handlebars Helpers</strong>
+                    <span>JavaScript</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
