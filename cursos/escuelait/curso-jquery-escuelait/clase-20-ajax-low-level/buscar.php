@@ -6,7 +6,7 @@ $producto = $_POST["producto"];
 $descripcion = $_POST["descripcion"];
 
 //Conexion con la base
-$conn = mysqli_connect("localhost", "root", "", "jquery_escuelait_classicmodels");
+$conn = mysqli_connect("127.0.0.1", "root", "", "jquery_escuelait_classicmodels");
 
 $result = mysqli_query($conn, "select * from products where productName like '%" . $producto . "%' and productDescription like '%" . $descripcion . "%'");
 //echo "res:" . $result;
