@@ -1,17 +1,16 @@
 /*
-    *  -----------------------------------------------------------------------------------------------------------------------------------------  *
-    *  -----  script-ejemplo-05.js  --  /cursos/escuelait/curso-jquery-escuelait/clase-18-formularios-ajax/assets/js/script-ejemplo-05.js  -----  *
-    *  -----------------------------------------------------------------------------------------------------------------------------------------  *
+    *  ------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  script.js  --  /cursos/escuelait/curso-jquery-escuelait/clase-18-formularios-ajax/ejemplo-04/assets/js/script.js  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------  *
 */
 
 
+
 /**
- * @typedef {Object} RespuestaCampos
+ * @typedef {Object} RespuestaValidacion
  * @property {boolean} valido - Indica si el servidor aceptó el envío.
  * @property {string} mensaje - Texto devuelto por el servidor.
- * @property {Record<string, string>=} errores - Mensaje de cada campo rechazado.
  */
-
 
 //  -----  arrancar cuando el documento está listo  -----
 $(() => {
@@ -130,9 +129,6 @@ $(() => {
     /** @type {JQuery<HTMLElement>} - `contenedor de la respuesta` */
     const $resultado = $("#resultado");
 
-    /** @type {JQuery<HTMLSpanElement>} - `avisos junto a cada campo` */
-    const $erroresCampo = $(".errorspan");
-
 
     //  -----  revisar el nombre al cambiar  -----
     $nombre.on("change", () => {
@@ -169,9 +165,6 @@ $(() => {
             //  -----  limpiar el aviso anterior  -----
             $muestraerror.empty();
 
-            //  -----  limpiar los avisos de cada campo  -----
-            $erroresCampo.empty();
-
             //  -----  bloquear el envío mientras dura la petición  -----
             $envio.prop("disabled", true);
 
@@ -181,11 +174,11 @@ $(() => {
             /** @type {string} - `campos serializados` */
             const datos = $formulario.serialize();
 
-            /** @type {JQuery.jqXHR<RespuestaCampos>} - `petición del formulario` */
+            /** @type {JQuery.jqXHR<RespuestaValidacion>} - `petición del formulario` */
             const peticion = $.post(url, datos, (respuesta) => {
 
-                /** @type {RespuestaCampos} - `json devuelto por el servidor` */
-                const datosRespuesta = /** @type {RespuestaCampos} */ (respuesta);
+                /** @type {RespuestaValidacion} - `json devuelto por el servidor` */
+                const datosRespuesta = /** @type {RespuestaValidacion} */ (respuesta);
 
                 //  -----  si el servidor acepta el envío, mostrar el mensaje  -----
                 if (datosRespuesta.valido) {
@@ -193,18 +186,11 @@ $(() => {
                     //  -----  escribir el mensaje de éxito  -----
                     $resultado.text(datosRespuesta.mensaje);
                 }
-                //  -----  si el servidor rechaza el envío, mostrar el error y los campos  -----
+                //  -----  si el servidor rechaza el envío, mostrar el error  -----
                 else {
 
                     //  -----  escribir el mensaje de error  -----
                     $muestraerror.text(datosRespuesta.mensaje);
-
-                    //  -----  recorrer los errores de cada campo  -----
-                    Object.entries(datosRespuesta.errores ?? {}).forEach(([campo, mensaje]) => {
-
-                        //  -----  escribir el aviso en el span siguiente al campo  -----
-                        $(`#${campo}`).next().text(mensaje);
-                    });
                 }
             }, "json");
 

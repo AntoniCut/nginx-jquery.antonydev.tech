@@ -1,0 +1,27 @@
+#muestraerror:empty {
+    display: none;
+}
+
+#muestraerror:not(:empty) {
+    margin: 0 0 1rem;
+    padding: 0.75rem 0.9rem;
+    color: #7a1e1e;
+    background: #fdeaea;
+    border-radius: 0.75rem;
+}
+
+.inputerror {
+    color: #1c2430;
+    background: #fff6f6;
+    border-color: #9f2d2d;
+}
+
+.errorspan:empty {
+    display: none;
+}
+
+.errorspan:not(:empty) {
+    color: #7a1e1e;
+    font-size: 0.92rem;
+    line-height: 1.35;
+}
