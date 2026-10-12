@@ -35,10 +35,13 @@ $(() => {
         const datos = $formulario.serialize();
 
         //  -----  publicar los datos y mostrar la respuesta  -----
-        $.post(url, datos, (respuesta) => {
+        $.post(url, datos, (
+            /** @type {string} - `html devuelto por enviar-01.php` */
+            respuesta
+        ) => {
 
             //  -----  pintar el html devuelto por el servidor  -----
-            $resultado.html(String(respuesta));
+            $resultado.html(respuesta);
         });
     });
 

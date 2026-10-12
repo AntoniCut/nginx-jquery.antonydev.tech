@@ -6,15 +6,16 @@
 
 
 
-/**
- * @typedef {Object} RespuestaCampos
- * @property {boolean} valido - Indica si el servidor aceptó el envío.
- * @property {string} mensaje - Texto devuelto por el servidor.
- * @property {Record<string, string>} errores - Mensaje de cada campo rechazado.
- */
-
 //  -----  arrancar cuando el documento está listo  -----
 $(() => {
+
+    
+    /**
+     * @typedef {Object} RespuestaCampos
+     * @property {boolean} valido - Indica si el servidor aceptó el envío.
+     * @property {string} mensaje - Texto devuelto por el servidor.
+     * @property {Record<string, string>} errores - Mensaje de cada campo rechazado.
+     */
 
     /**
      * -----------------------------------------------
@@ -182,25 +183,25 @@ $(() => {
             const datos = $formulario.serialize();
 
             /** @type {JQuery.jqXHR<RespuestaCampos>} - `petición del formulario` */
-            const peticion = $.post(url, datos, (respuesta) => {
-
-                /** @type {RespuestaCampos} - `json devuelto por el servidor` */
-                const datosRespuesta = /** @type {RespuestaCampos} */ (respuesta);
+            const peticion = $.post(url, datos, (
+                /** @type {RespuestaCampos} - `json devuelto por enviar-03.php` */
+                respuesta
+            ) => {
 
                 //  -----  si el servidor acepta el envío, mostrar el mensaje  -----
-                if (datosRespuesta.valido) {
+                if (respuesta.valido) {
 
                     //  -----  escribir el mensaje de éxito  -----
-                    $resultado.text(datosRespuesta.mensaje);
+                    $resultado.text(respuesta.mensaje);
                 }
                 //  -----  si el servidor rechaza el envío, mostrar el error y los campos  -----
                 else {
 
                     //  -----  escribir el mensaje de error  -----
-                    $muestraerror.text(datosRespuesta.mensaje);
+                    $muestraerror.text(respuesta.mensaje);
 
                     //  -----  recorrer los errores de cada campo  -----
-                    Object.entries(datosRespuesta.errores ?? {}).forEach(([campo, mensaje]) => {
+                    Object.entries(respuesta.errores).forEach(([campo, mensaje]) => {
 
                         //  -----  escribir el aviso en el span siguiente al campo  -----
                         $(`#${campo}`).next().text(mensaje);

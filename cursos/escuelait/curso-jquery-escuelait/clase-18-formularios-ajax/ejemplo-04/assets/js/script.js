@@ -6,14 +6,14 @@
 
 
 
-/**
- * @typedef {Object} RespuestaValidacion
- * @property {boolean} valido - Indica si el servidor aceptó el envío.
- * @property {string} mensaje - Texto devuelto por el servidor.
- */
-
 //  -----  arrancar cuando el documento está listo  -----
 $(() => {
+
+    /**
+     * @typedef {Object} RespuestaValidacion
+     * @property {boolean} valido - Indica si el servidor aceptó el envío.
+     * @property {string} mensaje - Texto devuelto por el servidor.
+     */
 
     /**
      * -----------------------------------------------
@@ -175,22 +175,22 @@ $(() => {
             const datos = $formulario.serialize();
 
             /** @type {JQuery.jqXHR<RespuestaValidacion>} - `petición del formulario` */
-            const peticion = $.post(url, datos, (respuesta) => {
-
-                /** @type {RespuestaValidacion} - `json devuelto por el servidor` */
-                const datosRespuesta = /** @type {RespuestaValidacion} */ (respuesta);
+            const peticion = $.post(url, datos, (
+                /** @type {RespuestaValidacion} - `json devuelto por enviar-02.php` */
+                respuesta
+            ) => {
 
                 //  -----  si el servidor acepta el envío, mostrar el mensaje  -----
-                if (datosRespuesta.valido) {
+                if (respuesta.valido) {
 
                     //  -----  escribir el mensaje de éxito  -----
-                    $resultado.text(datosRespuesta.mensaje);
+                    $resultado.text(respuesta.mensaje);
                 }
                 //  -----  si el servidor rechaza el envío, mostrar el error  -----
                 else {
 
                     //  -----  escribir el mensaje de error  -----
-                    $muestraerror.text(datosRespuesta.mensaje);
+                    $muestraerror.text(respuesta.mensaje);
                 }
             }, "json");
 
