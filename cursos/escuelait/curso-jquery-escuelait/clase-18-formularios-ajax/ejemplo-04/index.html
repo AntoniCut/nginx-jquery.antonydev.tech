@@ -1,0 +1,60 @@
+<!--
+    *  ----------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-18-formularios-ajax/ejemplo-04/index.html  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------------  *
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 04 - Validación en el servidor</title>
+    <link rel="shortcut icon" href="../../../../../assets/favicon/jquery-favicon.svg" type="image/svg+xml" />
+    <style>
+        #muestraerror {
+            color: red;
+        }
+
+        .inputerror {
+            background-color: #f99;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>con validaciones en el lado del servidor</h1>
+    <p id="muestraerror"></p>
+
+    <form action="../assets/php/enviar-02.php" id="f1" method="post">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+        </p>
+        <p>
+            <label for="intereses">Intereses</label>
+            <textarea name="intereses" id="intereses"></textarea>
+        </p>
+        <p>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+
+    <p id="resultado">ressssss</p>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0-beta.min.js"></script>
+    <script src="../assets/js/script-ejemplo-04.js"></script>
+</body>
+
+</html>

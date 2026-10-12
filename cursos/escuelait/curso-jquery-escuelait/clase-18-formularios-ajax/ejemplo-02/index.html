@@ -1,0 +1,50 @@
+<!--
+    *  ----------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-18-formularios-ajax/ejemplo-02/index.html  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------------  *
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 02 - Formulario serializado</title>
+    <link rel="shortcut icon" href="../../../../../assets/favicon/jquery-favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+    <h1>Ejemplo 02 - Formulario serializado</h1>
+
+    <form action="../assets/php/enviar-01.php" id="f1" method="post">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" />
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+        </p>
+        <p>
+            <label for="intereses">Intereses</label>
+            <textarea name="intereses" id="intereses"></textarea>
+        </p>
+        <p>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+
+    <p id="resultado">haz click</p>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0-beta.min.js"></script>
+    <script src="../assets/js/script-ejemplo-02.js"></script>
+</body>
+
+</html>
