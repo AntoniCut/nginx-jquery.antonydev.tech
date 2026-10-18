@@ -1,0 +1,18 @@
+/*
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  09-draggable-handle.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/09-draggable-handle.css  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#draggable,
+#draggable2 {
+    width: 100px;
+    height: 100px;
+    padding: 0.5em;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#draggable p {
+    cursor: move;
+}

@@ -1,0 +1,27 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  12-draggable-snap-to.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/12-draggable-snap-to.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.draggable {
+    width: 90px;
+    height: 80px;
+    padding: 5px;
+    float: left;
+    margin: 0 10px 10px 0;
+    font-size: 0.9em;
+}
+
+.ui-widget-header p,
+.ui-widget-content p {
+    margin: 0;
+}
+
+#snaptarget {
+    height: 140px;
+}
+
+.clear {
+    clear: both;
+}

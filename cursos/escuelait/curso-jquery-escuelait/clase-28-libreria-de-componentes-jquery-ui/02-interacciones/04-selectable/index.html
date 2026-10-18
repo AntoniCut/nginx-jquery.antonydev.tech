@@ -1,0 +1,150 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/04-selectable/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Selectable</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #1c2430;
+            --muted: #5c6775;
+            --line: #d7dee7;
+            --paper: #f4f7fb;
+            --card: #ffffff;
+            --accent: #0769ad;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+        }
+
+        main {
+            width: min(40rem, calc(100% - 2rem));
+            margin: 3rem auto;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            font-size: 1.75rem;
+            font-weight: 650;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin: 0 0 1.5rem;
+            max-width: 65ch;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            color: var(--accent);
+            font-weight: 650;
+            text-decoration: none;
+            text-underline-offset: 0.2em;
+        }
+
+        .volver:hover,
+        .volver:focus-visible {
+            text-decoration: underline;
+        }
+
+        .fuente {
+            color: var(--accent);
+            font-weight: 650;
+            text-underline-offset: 0.2em;
+        }
+
+        .fuente:hover,
+        .fuente:focus-visible {
+            color: #054e82;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        li a {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.9rem 1.05rem;
+            color: var(--ink);
+            text-decoration: none;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 0.75rem;
+            transition: border-color 160ms ease, background-color 160ms ease;
+        }
+
+        li a:hover,
+        li a:focus-visible {
+            border-color: var(--accent);
+            background: #f3f8fc;
+        }
+
+        li a span {
+            flex: 0 0 1.75rem;
+            color: var(--accent);
+            font-variant-numeric: tabular-nums;
+            font-weight: 650;
+            text-align: end;
+        }
+
+        li a strong {
+            font-size: 1.05rem;
+            font-weight: 650;
+        }
+
+        ::selection {
+            background: #c5dff3;
+            color: var(--ink);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            li a {
+                transition: none;
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Interacciones</a>
+        <h1>Selectable</h1>
+        <p>Selecciona varios elementos. Las demos de esta interacción todavía no están en la clase.</p>
+
+    </main>
+</body>
+
+</html>

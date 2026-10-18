@@ -1,0 +1,18 @@
+/*
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  10-draggable-sortable.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/10-draggable-sortable.css  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+}

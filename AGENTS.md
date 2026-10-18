@@ -7,7 +7,8 @@ Lee `README.md` para el mapa de carpetas. Aquí va cómo se edita.
 ## Alcance
 
 - Cambia solo la clase o el ejercicio que se pida.
-- Las clases 18 y 19 de EscuelaIT siguen el patrón de carpeta por ejercicio. Las clases 20 a 28 conservan el HTML original; no las reestructures salvo que se pida.
+- Las clases 18 y 19 de EscuelaIT siguen el patrón de carpeta por ejercicio. Las clases 20 a 27 conservan el HTML original; no las reestructures salvo que se pida.
+- La clase 28, `clase-28-libreria-de-componentes-jquery-ui`, guarda el CSS y el JS de cada ejercicio en `assets/css/` y `assets/js/` de la clase, con el nombre numerado del ejercicio. Cada ejercicio solo tiene `index.html`. jQuery, jQuery UI y el tema base se cargan desde `/assets/libs/`.
 - `cursos/desarrollowebcom` es un repositorio git anidado. No lo commitees desde este repo.
 - `workflow/` está en `.gitignore`. No lo añadas al commit.
 - No añadas dependencias npm ni un sistema de build salvo que se pida. jQuery y Handlebars ya están en `assets/libs/`.
@@ -26,7 +27,7 @@ clase-NN-nombre/
     assets/js/script.js
 ```
 
-- El script del ejercicio es `assets/js/script.js` dentro de esa carpeta. No juntes los scripts de varios ejercicios en un `assets/js` de la clase.
+- En las clases 18 y 19 el script del ejercicio es `assets/js/script.js` dentro de esa carpeta. No juntes los scripts de varios ejercicios en un `assets/js` de la clase. La clase 28 es la excepción: ahí el CSS y el JS sí viven juntos en el `assets/` de la clase.
 - El CSS compartido de la clase va en `clase-NN-nombre/assets/css/styles.css`. Las reglas solo de un ejercicio van en su `assets/css/styles.css`.
 - La transición entre las páginas del curso está en `cursos/escuelait/curso-jquery-escuelait/assets/css/styles.css`. El índice de cada clase la enlaza con `../assets/css/styles.css`.
 - Si el ejercicio llama a PHP, el endpoint compartido de la clase vive en `clase-NN-nombre/assets/php/` y el script lo pide con una ruta relativa a esa carpeta.
@@ -67,6 +68,8 @@ Al escribir o tocar `.js` (también el script dentro de un `.html`):
 ## CSS
 
 Mobile first. Reutiliza los tokens de la clase (`--ink`, `--muted`, `--line`, `--paper`, `--card`, `--accent`). En transiciones, respeta `prefers-reduced-motion: reduce`.
+
+Los `.css` de la clase 28 llevan el mismo banner de tres líneas que los `.js`: cuatro espacios de sangría, el nombre del archivo y la ruta desde la raíz.
 
 ## Índices
 

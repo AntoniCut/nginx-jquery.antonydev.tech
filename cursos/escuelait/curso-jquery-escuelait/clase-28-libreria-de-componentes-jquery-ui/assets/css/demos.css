@@ -1,0 +1,26 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  demos.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/demos.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.demo-loading {
+	visibility: hidden;
+}
+
+table {
+	font-size: 1em;
+}
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
