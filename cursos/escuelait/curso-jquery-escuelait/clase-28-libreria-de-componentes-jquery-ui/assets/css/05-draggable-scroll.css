@@ -7,11 +7,11 @@
 #draggable,
 #draggable2,
 #draggable3 {
-    width: 100px;
-    height: 100px;
-    padding: 0.5em;
+    width: min(100%, 14rem);
+    min-height: 8rem;
+    padding: 0.85rem;
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 0.75rem 0.75rem 0;
 }
 
 .scroll-spacer {

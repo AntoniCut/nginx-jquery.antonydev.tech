@@ -36,7 +36,7 @@ $(function () {
         helper.classList.add("ui-widget-header");
 
         //  -----  escribir el texto del helper  -----
-        helper.textContent = "I'm a custom helper";
+        helper.textContent = "Soy un helper personalizado";
 
         //  -----  devolver el helper  -----
         return helper;

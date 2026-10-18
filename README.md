@@ -94,7 +94,7 @@ clase-28-libreria-de-componentes-jquery-ui/
     11-draggable-revert.css
     12-draggable-snap-to.css
     13-draggable-visual-feedback.css
-    demos.css
+    styles.css
   assets/js/
     el mismo nombre que cada CSS de ejercicio, con extensión .js
   01-metodo-on/

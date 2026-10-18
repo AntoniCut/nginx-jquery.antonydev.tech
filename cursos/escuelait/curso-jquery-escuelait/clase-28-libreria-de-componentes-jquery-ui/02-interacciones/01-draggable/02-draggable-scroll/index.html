@@ -4,39 +4,53 @@
     *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable - Auto-scroll</title>
+    <title>Desplazamiento automático</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/05-draggable-scroll.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/05-draggable-scroll.js"></script>
 </head>
 
 <body>
-    <div id="draggable" class="ui-widget-content">
-        <p>Scroll set to true, default settings</p>
-    </div>
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Desplazamiento automático</h1>
 
-    <div id="draggable2" class="ui-widget-content">
-        <p>scrollSensitivity set to 100</p>
-    </div>
+        <div class="escenario">
+            <div id="draggable" class="ui-widget-content">
+                <p>Desplazamiento activado, con los ajustes por defecto</p>
+            </div>
 
-    <div id="draggable3" class="ui-widget-content">
-        <p>scrollSpeed set to 100</p>
-    </div>
+            <div id="draggable2" class="ui-widget-content">
+                <p><code>scrollSensitivity</code> a 100</p>
+            </div>
+
+            <div id="draggable3" class="ui-widget-content">
+                <p><code>scrollSpeed</code> a 100</p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>El documento se desplaza solo cuando el elemento sale del área visible. <code>scroll</code> lo activa. <code>scrollSensitivity</code> y <code>scrollSpeed</code> ajustan el momento y la velocidad. Arrastra una caja hacia el borde inferior de la ventana.</p>
+        </div>
+    </main>
 
     <div class="scroll-spacer"></div>
 
-    <div class="demo-description">
-        <p>Automatically scroll the document when the draggable is moved beyond the viewport. Set the <code>scroll</code> option to true to enable auto-scrolling, and fine-tune when scrolling is triggered and its speed with the <code>scrollSensitivity</code> and <code>scrollSpeed</code> options.</p>
-    </div>
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/05-draggable-scroll.js"></script>
 </body>
 
 </html>

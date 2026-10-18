@@ -17,7 +17,7 @@ $(function () {
     const $draggable3 = $("#draggable3");
 
     //  -----  fijar el cursor en el centro de la caja  -----
-    $draggable.draggable({ cursor: "move", cursorAt: { top: 56, left: 56 } });
+    $draggable.draggable({ cursor: "move", cursorAt: { top: 70, left: 100 } });
 
     //  -----  colocar el cursor 5 px fuera de la esquina superior izquierda  -----
     $draggable2.draggable({ cursor: "crosshair", cursorAt: { top: -5, left: -5 } });

@@ -4,60 +4,66 @@
     *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable - Snap to element or grid</title>
+    <title>Ajuste a un elemento o a una rejilla</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/12-draggable-snap-to.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/12-draggable-snap-to.js"></script>
 </head>
 
 <body>
-    <div id="snaptarget" class="ui-widget-header">
-        <p>I'm a snap target</p>
-    </div>
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Ajuste a un elemento o a una rejilla</h1>
 
-    <br class="clear">
+        <div class="escenario">
+            <div id="snaptarget" class="ui-widget-header">
+                <p>Soy un objetivo de ajuste</p>
+            </div>
 
-    <div id="draggable" class="draggable ui-widget-content">
-        <p>Default (snap: true), snaps to all other draggable elements</p>
-    </div>
+            <br class="clear">
 
-    <div id="draggable2" class="draggable ui-widget-content">
-        <p>I only snap to the big box</p>
-    </div>
+            <div id="draggable" class="draggable ui-widget-content">
+                <p>Por defecto (<code>snap: true</code>) me ajusto a los demás elementos arrastrables</p>
+            </div>
 
-    <div id="draggable3" class="draggable ui-widget-content">
-        <p>I only snap to the outer edges of the big box</p>
-    </div>
+            <div id="draggable2" class="draggable ui-widget-content">
+                <p>Solo me ajusto a la caja grande</p>
+            </div>
 
-    <div id="draggable4" class="draggable ui-widget-content">
-        <p>I snap to a 20 x 20 grid</p>
-    </div>
+            <div id="draggable3" class="draggable ui-widget-content">
+                <p>Solo me ajusto al borde exterior de la caja grande</p>
+            </div>
 
-    <div id="draggable5" class="draggable ui-widget-content">
-        <p>I snap to a 80 x 80 grid</p>
-    </div>
+            <div id="draggable4" class="draggable ui-widget-content">
+                <p>Me muevo en una rejilla de 20 × 20</p>
+            </div>
 
-    <div class="demo-description">
-        <p>
-            Snap the draggable to the inner or outer boundaries of a DOM element.
-            Use the <code>snap</code>, <code>snapMode</code> (inner, outer, both),
-            and <code>snapTolerance</code> (distance in pixels the draggable must be
-            from the element when snapping is invoked) options.
-        </p>
-        <p>
-            Or snap the draggable to a grid. Set the dimensions of grid cells
-            (height and width in pixels) with the <code>grid</code> option.
-        </p>
-    </div>
+            <div id="draggable5" class="draggable ui-widget-content">
+                <p>Me muevo en una rejilla de 80 × 80</p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p><code>snap</code> pega el elemento al borde de otro. <code>snapMode</code> elige el borde interior, el exterior o ambos. <code>snapTolerance</code> es la distancia, en píxeles, a la que salta el ajuste.</p>
+            <p><code>grid</code> mueve el elemento en pasos. El array indica el ancho y el alto de cada celda, en píxeles.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/12-draggable-snap-to.js"></script>
 </body>
 
 </html>

@@ -4,37 +4,51 @@
     *  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable + Sortable</title>
+    <title>Draggable y Sortable</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/10-draggable-sortable.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/10-draggable-sortable.js"></script>
 </head>
 
 <body>
-    <ul>
-        <li id="draggable" class="ui-state-highlight">Drag me down</li>
-    </ul>
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Draggable y Sortable</h1>
 
-    <ul id="sortable">
-        <li class="ui-state-default">Item 1</li>
-        <li class="ui-state-default">Item 2</li>
-        <li class="ui-state-default">Item 3</li>
-        <li class="ui-state-default">Item 4</li>
-        <li class="ui-state-default">Item 5</li>
-    </ul>
+        <div class="escenario">
+            <ul>
+                <li id="draggable" class="ui-state-highlight">Arrástrame hacia abajo</li>
+            </ul>
 
-    <div class="demo-description">
-        <p>Draggables are built to interact seamlessly with <a href="https://jqueryui.com/sortable">sortables</a>.</p>
-    </div>
+            <ul id="sortable">
+                <li class="ui-state-default">Elemento 1</li>
+                <li class="ui-state-default">Elemento 2</li>
+                <li class="ui-state-default">Elemento 3</li>
+                <li class="ui-state-default">Elemento 4</li>
+                <li class="ui-state-default">Elemento 5</li>
+            </ul>
+        </div>
+
+        <div class="demo-description">
+            <p>Un elemento draggable puede soltarse dentro de una lista sortable y pasar a formar parte de ella.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/10-draggable-sortable.js"></script>
 </body>
 
 </html>

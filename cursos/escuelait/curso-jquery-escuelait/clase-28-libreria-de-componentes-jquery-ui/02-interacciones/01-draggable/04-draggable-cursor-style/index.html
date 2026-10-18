@@ -4,37 +4,51 @@
     *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable - Cursor style</title>
+    <title>Estilo del cursor</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/07-draggable-cursor-style.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/07-draggable-cursor-style.js"></script>
 </head>
 
 <body>
-    <div id="draggable" class="ui-widget-content">
-        <p>I will always stick to the center (relative to the mouse)</p>
-    </div>
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Estilo del cursor</h1>
 
-    <div id="draggable2" class="ui-widget-content">
-        <p>My cursor is at left -5 and top -5</p>
-    </div>
+        <div class="escenario">
+            <div id="draggable" class="ui-widget-content">
+                <p>El cursor se queda en el centro, respecto al ratón</p>
+            </div>
 
-    <div id="draggable3" class="ui-widget-content">
-        <p>My cursor position is only controlled for the 'bottom' value</p>
-    </div>
+            <div id="draggable2" class="ui-widget-content">
+                <p>El cursor está en left -5 y top -5</p>
+            </div>
 
-    <div class="demo-description">
-        <p>Position the cursor while dragging the object. By default the cursor appears in the center of the dragged object; use the <code>cursorAt</code> option to specify another location relative to the draggable (specify a pixel value from the top, right, bottom, and/or left). Customize the cursor's appearance by supplying the <code>cursor</code> option with a valid CSS cursor value: default, move, pointer, crosshair, etc.</p>
-    </div>
+            <div id="draggable3" class="ui-widget-content">
+                <p>La posición del cursor solo usa el valor bottom</p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Coloca el cursor mientras arrastras. Por defecto aparece en el centro del objeto. <code>cursorAt</code> indica otro punto, en píxeles desde <code>top</code>, <code>right</code>, <code>bottom</code> o <code>left</code>. <code>cursor</code> cambia el aspecto con un valor CSS válido: <code>default</code>, <code>move</code>, <code>pointer</code>, <code>crosshair</code>, etc.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/07-draggable-cursor-style.js"></script>
 </body>
 
 </html>

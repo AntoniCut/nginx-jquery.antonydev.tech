@@ -9,28 +9,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>Clase 28 - Método on con datos</title>
+    <title>Método on con datos</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/03-metodo-on-tercer-parametro-datos.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="../../assets/js/03-metodo-on-tercer-parametro-datos.js"></script>
 </head>
 
 <body>
-    <h1>Clase 28 - jQuery UI - Método on con datos</h1>
-    <p>El tercer argumento de <code>.on()</code> es un objeto de datos. El manejador lo lee en <code>evento.data</code> y el párrafo clonado también lo recibe.</p>
+    <main>
+        <a class="volver" href="../index.html">Método on</a>
+        <h1>Método on con datos</h1>
+        <p>El tercer argumento de <code>.on()</code> es un objeto de datos. El manejador lo lee en <code>evento.data</code> y el párrafo clonado también lo recibe.</p>
 
-    <div id="source">
-        <p class="boldize">Convierteme en negrita y color rojo</p>
-    </div>
+        <div id="source">
+            <p class="boldize">Conviérteme en negrita y color rojo</p>
+        </div>
 
-    <button id="clone" type="button">
-        Clone
-    </button>
+        <button id="clone" type="button">Clonar</button>
 
-    <div id="target">
-        <!--  -----  Aquí se escribe el contenido de 'source'  ------->
-    </div>
+        <div id="target">
+            <!--  -----  Aquí se escribe el contenido de 'source'  ------->
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="../../assets/js/03-metodo-on-tercer-parametro-datos.js"></script>
 </body>
 
 </html>

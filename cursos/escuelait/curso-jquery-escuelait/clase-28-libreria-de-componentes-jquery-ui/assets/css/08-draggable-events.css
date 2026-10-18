@@ -5,23 +5,28 @@
 */
 
 #draggable {
-    width: 16em;
-    padding: 0 1em;
+    width: min(100%, 24rem);
+    padding: 0.85rem 1rem 0.35rem;
+}
+
+#draggable ul {
+    margin: 0.85rem 0 0.5rem;
+    padding: 0;
+    list-style: none;
 }
 
 #draggable ul li {
-    margin: 1em 0;
-    padding: 0.5em 0;
-}
-
-* html #draggable ul li {
-    height: 1%;
+    margin: 0.65rem 0;
+    padding: 0.55rem 0.7rem;
 }
 
 #draggable ul li span.ui-icon {
     float: left;
+    margin-top: 0.15rem;
+    margin-right: 0.35rem;
 }
 
 #draggable ul li span.count {
-    font-weight: bold;
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
 }

@@ -5,7 +5,7 @@
 */
 
 #draggable {
-    width: 150px;
-    height: 150px;
-    padding: 0.5em;
+    width: min(100%, 11rem);
+    min-height: 11rem;
+    padding: 0.85rem;
 }

@@ -4,29 +4,43 @@
     *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable - Default functionality</title>
+    <title>Funcionalidad por defecto</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/04-draggable-default.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/04-draggable-default.js"></script>
 </head>
 
 <body>
-    <div id="draggable" class="ui-widget-content">
-        <p>Drag me around</p>
-    </div>
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Funcionalidad por defecto</h1>
 
-    <div class="demo-description">
-        <p>Enable draggable functionality on any DOM element. Move the draggable object by clicking on it with the mouse and dragging it anywhere within the viewport.</p>
-    </div>
+        <div class="escenario">
+            <div id="draggable" class="ui-widget-content">
+                <p>Arrástrame</p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Activa el arrastre en cualquier elemento del DOM. Mueve el objeto con el ratón y suéltalo en cualquier punto de la ventana.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/04-draggable-default.js"></script>
 </body>
 
 </html>

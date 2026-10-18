@@ -9,133 +9,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
     <title>Draggable</title>
-    <link rel="stylesheet" href="../../../assets/css/styles.css">
-    <style>
-        :root {
-            color-scheme: light;
-            --ink: #1c2430;
-            --muted: #5c6775;
-            --line: #d7dee7;
-            --paper: #f4f7fb;
-            --card: #ffffff;
-            --accent: #0769ad;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: "Segoe UI", sans-serif;
-            color: var(--ink);
-            background: var(--paper);
-        }
-
-        main {
-            width: min(40rem, calc(100% - 2rem));
-            margin: 3rem auto;
-        }
-
-        h1 {
-            margin: 0 0 0.5rem;
-            font-size: 1.75rem;
-            font-weight: 650;
-            letter-spacing: -0.02em;
-        }
-
-        p {
-            margin: 0 0 1.5rem;
-            max-width: 65ch;
-            color: var(--muted);
-            line-height: 1.5;
-        }
-
-        a:focus-visible {
-            outline: 2px solid var(--accent);
-            outline-offset: 3px;
-        }
-
-        .volver {
-            display: inline-block;
-            margin-bottom: 1.25rem;
-            color: var(--accent);
-            font-weight: 650;
-            text-decoration: none;
-            text-underline-offset: 0.2em;
-        }
-
-        .volver:hover,
-        .volver:focus-visible {
-            text-decoration: underline;
-        }
-
-        .fuente {
-            color: var(--accent);
-            font-weight: 650;
-            text-underline-offset: 0.2em;
-        }
-
-        .fuente:hover,
-        .fuente:focus-visible {
-            color: #054e82;
-        }
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            gap: 0.75rem;
-        }
-
-        li a {
-            display: flex;
-            align-items: center;
-            gap: 0.85rem;
-            padding: 0.9rem 1.05rem;
-            color: var(--ink);
-            text-decoration: none;
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 0.75rem;
-            transition: border-color 160ms ease, background-color 160ms ease;
-        }
-
-        li a:hover,
-        li a:focus-visible {
-            border-color: var(--accent);
-            background: #f3f8fc;
-        }
-
-        li a span {
-            flex: 0 0 1.75rem;
-            color: var(--accent);
-            font-variant-numeric: tabular-nums;
-            font-weight: 650;
-            text-align: end;
-        }
-
-        li a strong {
-            font-size: 1.05rem;
-            font-weight: 650;
-        }
-
-        ::selection {
-            background: #c5dff3;
-            color: var(--ink);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            li a {
-                transition: none;
-            }
-        }
-    
-    </style>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 
 <body>
@@ -144,16 +26,16 @@
         <h1>Draggable</h1>
         <p>Permite mover elementos con el ratón. Mismas demos que <a class="fuente" href="https://jqueryui.com/draggable/">jqueryui.com/draggable</a>.</p>
         <ul>
-            <li><a href="01-draggable-default/index.html"><span>1</span><strong>Default functionality</strong></a></li>
-            <li><a href="02-draggable-scroll/index.html"><span>2</span><strong>Auto-scroll</strong></a></li>
-            <li><a href="03-draggable-constraint-movement/index.html"><span>3</span><strong>Constrain movement</strong></a></li>
-            <li><a href="04-draggable-cursor-style/index.html"><span>4</span><strong>Cursor style</strong></a></li>
-            <li><a href="05-draggable-events/index.html"><span>5</span><strong>Events</strong></a></li>
-            <li><a href="06-draggable-handle/index.html"><span>6</span><strong>Handles</strong></a></li>
-            <li><a href="07-draggable-sortable/index.html"><span>7</span><strong>jQuery UI Draggable + Sortable</strong></a></li>
-            <li><a href="08-draggable-revert/index.html"><span>8</span><strong>Revert position</strong></a></li>
-            <li><a href="09-draggable-snap-to/index.html"><span>9</span><strong>Snap to element or grid</strong></a></li>
-            <li><a href="10-draggable-visual-feedback/index.html"><span>10</span><strong>Visual feedback</strong></a></li>
+            <li><a href="01-draggable-default/"><span>1</span><strong>Funcionalidad por defecto</strong></a></li>
+            <li><a href="02-draggable-scroll/"><span>2</span><strong>Desplazamiento automático</strong></a></li>
+            <li><a href="03-draggable-constraint-movement/"><span>3</span><strong>Limitar el movimiento</strong></a></li>
+            <li><a href="04-draggable-cursor-style/"><span>4</span><strong>Estilo del cursor</strong></a></li>
+            <li><a href="05-draggable-events/"><span>5</span><strong>Eventos</strong></a></li>
+            <li><a href="06-draggable-handle/"><span>6</span><strong>Asas</strong></a></li>
+            <li><a href="07-draggable-sortable/"><span>7</span><strong>Draggable y Sortable</strong></a></li>
+            <li><a href="08-draggable-revert/"><span>8</span><strong>Volver a la posición</strong></a></li>
+            <li><a href="09-draggable-snap-to/"><span>9</span><strong>Ajuste a un elemento o a una rejilla</strong></a></li>
+            <li><a href="10-draggable-visual-feedback/"><span>10</span><strong>Respuesta visual</strong></a></li>
         </ul>
     </main>
 </body>

@@ -9,28 +9,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>Clase 28 - Método on con delegación</title>
+    <title>Método on con delegación</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/02-metodo-on-con-delegacion.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="../../assets/js/02-metodo-on-con-delegacion.js"></script>
 </head>
 
 <body>
-    <h1>Clase 28 - jQuery UI - Método on con delegación</h1>
-    <p>El click de <code>.boldize</code> se delega en <code>#source</code> y <code>#target</code>. El párrafo clonado también se pone en negrita.</p>
+    <main>
+        <a class="volver" href="../index.html">Método on</a>
+        <h1>Método on con delegación</h1>
+        <p>El clic de <code>.boldize</code> se delega en <code>#source</code> y <code>#target</code>. El párrafo clonado también se pone en negrita.</p>
 
-    <div id="source">
-        <p class="boldize">Convierteme en negrita</p>
-    </div>
+        <div id="source">
+            <p class="boldize">Conviérteme en negrita</p>
+        </div>
 
-    <button id="clone" type="button">
-        Clone
-    </button>
+        <button id="clone" type="button">Clonar</button>
 
-    <div id="target">
-        <!--  -----  Aquí se escribe el contenido de 'source'  ------->
-    </div>
+        <div id="target">
+            <!--  -----  Aquí se escribe el contenido de 'source'  ------->
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="../../assets/js/02-metodo-on-con-delegacion.js"></script>
 </body>
 
 </html>

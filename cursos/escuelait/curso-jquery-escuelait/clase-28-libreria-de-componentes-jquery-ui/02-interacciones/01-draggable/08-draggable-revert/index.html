@@ -4,33 +4,47 @@
     *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable - Revert position</title>
+    <title>Volver a la posición</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/11-draggable-revert.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/11-draggable-revert.js"></script>
 </head>
 
 <body>
-    <div id="draggable" class="ui-widget-content">
-        <p>Revert the original</p>
-    </div>
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Volver a la posición</h1>
 
-    <div id="draggable2" class="ui-widget-content">
-        <p>Revert the helper</p>
-    </div>
+        <div class="escenario">
+            <div id="draggable" class="ui-widget-content">
+                <p>Vuelve el original</p>
+            </div>
 
-    <div class="demo-description">
-        <p>Return the draggable (or it's helper) to its original location when dragging stops with the boolean <code>revert</code> option.</p>
-    </div>
+            <div id="draggable2" class="ui-widget-content">
+                <p>Vuelve el helper</p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Con <code>revert</code>, el elemento —o su helper— regresa al sitio de origen al soltarlo.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/11-draggable-revert.js"></script>
 </body>
 
 </html>

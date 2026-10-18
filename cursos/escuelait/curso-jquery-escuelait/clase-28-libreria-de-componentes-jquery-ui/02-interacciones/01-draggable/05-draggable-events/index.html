@@ -4,36 +4,49 @@
     *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
 -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
-    <title>jQuery UI Draggable - Events</title>
+    <title>Eventos</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="../../../assets/css/demos.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
     <link rel="stylesheet" href="../../../assets/css/08-draggable-events.css">
-    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
-    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../../assets/js/08-draggable-events.js"></script>
 </head>
 
 <body>
-    <div id="draggable" class="ui-widget ui-widget-content">
+    <main>
+        <a class="volver" href="../index.html">Draggable</a>
+        <h1>Eventos</h1>
 
-        <p>Drag me to trigger the chain of events.</p>
+        <div class="escenario">
+            <div id="draggable" class="ui-widget ui-widget-content">
+                <p>Arrástrame para disparar la cadena de eventos.</p>
 
-        <ul class="ui-helper-reset">
-            <li id="event-start" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-play"></span>"start" invoked <span class="count">0</span>x</li>
-            <li id="event-drag" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-arrow-4"></span>"drag" invoked <span class="count">0</span>x</li>
-            <li id="event-stop" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-stop"></span>"stop" invoked <span class="count">0</span>x</li>
-        </ul>
-    </div>
+                <ul class="ui-helper-reset">
+                    <li id="event-start" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-play"></span><code>start</code> invocado <span class="count">0</span> veces</li>
+                    <li id="event-drag" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-arrow-4"></span><code>drag</code> invocado <span class="count">0</span> veces</li>
+                    <li id="event-stop" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-stop"></span><code>stop</code> invocado <span class="count">0</span> veces</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="demo-description">
-        <p>Layer functionality onto the draggable using the <code>start</code>, <code>drag</code>, and <code>stop</code> events. Start is fired at the start of the drag; drag during the drag; and stop when dragging stops.</p>
-    </div>
+        <div class="demo-description">
+            <p><code>start</code> se dispara al empezar el arrastre, <code>drag</code> mientras se mueve y <code>stop</code> al soltar.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/08-draggable-events.js"></script>
 </body>
 
 </html>

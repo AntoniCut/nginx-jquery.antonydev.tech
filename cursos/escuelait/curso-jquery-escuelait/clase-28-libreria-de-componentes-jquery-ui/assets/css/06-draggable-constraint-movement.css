@@ -5,16 +5,16 @@
 */
 
 .draggable {
-    width: 90px;
-    height: 90px;
-    padding: 0.5em;
+    width: min(100%, 12rem);
+    min-height: 6.5rem;
+    padding: 0.85rem;
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 0.75rem 0.75rem 0;
 }
 
 #draggable,
 #draggable2 {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 #draggable {
@@ -26,12 +26,28 @@
 }
 
 #containment-wrapper {
-    width: 95%;
-    height: 150px;
-    border: 2px solid #ccc;
-    padding: 10px;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+    min-height: 18rem;
+    padding: 0.85rem;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
 }
 
-h3 {
-    clear: left;
+#containment-wrapper > .draggable {
+    width: min(100%, 16rem);
+    min-height: 9rem;
+    margin: 0;
+    float: none;
+}
+
+#draggable4 {
+    display: inline-block;
+    width: auto;
+    cursor: move;
 }
