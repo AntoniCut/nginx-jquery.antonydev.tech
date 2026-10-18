@@ -75,7 +75,7 @@ clase-18-formularios-ajax/
 
 El CSS de la clase lo comparten el índice y los ejercicios. El CSS y el JS de cada ejemplo viven dentro de ese ejemplo. El PHP compartido de la clase 18 está en `assets/php/` (`pag.php`, `enviar-01.php`, `enviar-02.php`, `enviar-03.php`).
 
-La clase 28 queda así. Cada ejercicio solo tiene `index.html`. El CSS y el JS numerados viven en el `assets/` de la clase. Cada `.css` y cada `.js` abre con el mismo banner de tres líneas: el nombre del archivo y la ruta desde la raíz del repo.
+La clase 28 queda así. Cada ejercicio solo tiene `index.html`. El CSS y el JS numerados viven en el `assets/` de la clase. Cada `.css` y cada `.js` abre con el mismo banner de tres líneas: el nombre del archivo y la ruta desde la raíz del repo. El detalle de la carpeta está en `clase-28-libreria-de-componentes-jquery-ui/README.md`.
 
 ```text
 clase-28-libreria-de-componentes-jquery-ui/
