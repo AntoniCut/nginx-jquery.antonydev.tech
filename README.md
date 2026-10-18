@@ -41,7 +41,7 @@ Manual de jQuery, videotutoriales, jQuery.io, recursos descargados y PDFs. Esa c
 
 `cursos/escuelait/curso-jquery-escuelait/`
 
-Clases 1 a 6 y 18 a 28. El índice del curso está en `index.html` de esa carpeta. La transición entre páginas vive en `assets/css/view-transition.css`. El listado de las clases 1 a 6 usa `assets/css/styles.css`.
+Clases 1 a 7 y 18 a 28. El índice del curso está en `index.html` de esa carpeta. La transición entre páginas vive en `assets/css/view-transition.css`. El listado de las clases 1 a 7 usa `assets/css/styles.css`.
 
 | Clase | Carpeta | Contenido |
 | --- | --- | --- |
@@ -51,6 +51,7 @@ Clases 1 a 6 y 18 a 28. El índice del curso está en `index.html` de esa carpet
 | 4 | `clase-04-introduccion-a-jquery-manual-de-jquery-mobile` | Manual de jQuery Mobile en PDF. |
 | 5 | `clase-05-introduccion-a-jquery-resumen-de-selectores-jquery` | Resumen de selectores jQuery en PDF. |
 | 6 | `clase-06-primeros-pasos-con-jquery` | Introducción a jQuery en PDF. Dos ejemplos: arranque y recorridos. |
+| 7 | `clase-07-manipulacion-basica-de-elementos` | Manipulación básica en PDF. Cuatro ejemplos: html y text, formulario, data y each. |
 | 18 | `clase-18-formularios-ajax` | Formularios con AJAX. Cinco ejemplos y PHP compartido. |
 | 19 | `clase-19-eventos-avanzados` | Eventos diferidos, parámetros, disparo y eventos personalizados. |
 | 20 | `clase-20-ajax-low-level` | POST, carga de scripts, buscador y selects combinados. |
@@ -64,7 +65,7 @@ Clases 1 a 6 y 18 a 28. El índice del curso está en `index.html` de esa carpet
 | 27 | `clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-2` | Plugin de validación avanzada. |
 | 28 | `clase-28-libreria-de-componentes-jquery-ui` | Método on e interacciones de jQuery UI: draggable, droppable, resizable, selectable y sortable. |
 
-Las clases 18 y 19 usan una carpeta por ejercicio, con su CSS y su JS dentro. La clase 6 guarda el CSS y el JS de cada ejemplo en `assets/` de la clase, y el PDF en `assets/pdf/`. La clase 28 agrupa el CSS y el JS de los ejercicios en `assets/` de la clase. El resto conserva el HTML original, en archivos sueltos.
+Las clases 18 y 19 usan una carpeta por ejercicio, con su CSS y su JS dentro. Las clases 6 y 7 guardan el CSS y el JS de cada ejemplo en `assets/` de la clase, y el PDF en `assets/pdf/`. La clase 28 agrupa el CSS y el JS de los ejercicios en `assets/` de la clase. El resto conserva el HTML original, en archivos sueltos.
 
 Un ejercicio de las clases 18 y 19 queda así:
 

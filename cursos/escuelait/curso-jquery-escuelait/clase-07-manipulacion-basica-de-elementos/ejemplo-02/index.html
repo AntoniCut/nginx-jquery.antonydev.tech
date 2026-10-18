@@ -1,0 +1,49 @@
+<!--
+    *  --------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-07-manipulacion-basica-de-elementos/ejemplo-02/index.html  -----  *
+    *  --------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 02 - Formulario</title>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/view-transition.css" />
+    <link rel="stylesheet" href="../assets/css/ejemplo-02.css" />
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Manipulación básica de elementos</a>
+        <h1>Formulario</h1>
+        <form action="enviar.php">
+            <label for="fnombre">Nombre
+                <input type="text" name="nombre" id="fnombre" value="x">
+            </label>
+            <label class="casilla" for="checkav">
+                <input type="checkbox" name="avanzado" id="checkav" checked="checked">
+                Avanzado
+            </label>
+            <div id="bloqueavanzado">
+                <p>Este es el bloque del formulario para avanzado.</p>
+                <button type="button">Cerrar</button>
+            </div>
+        </form>
+        <form action="kk.php" id="loquesea" hidden></form>
+        <output id="lectura"></output>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="../assets/js/ejemplo-02.js"></script>
+</body>
+
+</html>

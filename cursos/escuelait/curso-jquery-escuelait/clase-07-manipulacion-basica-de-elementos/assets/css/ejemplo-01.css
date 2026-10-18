@@ -1,0 +1,91 @@
+:root {
+    color-scheme: light;
+    --ink: #1c2430;
+    --muted: #5c6775;
+    --line: #d7dee7;
+    --paper: #f4f7fb;
+    --card: #ffffff;
+    --accent: #0769ad;
+    --focus: #0769ad;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+main {
+    width: min(40rem, calc(100% - 2rem));
+    margin: 1.5rem auto 2.5rem;
+}
+
+.volver {
+    display: inline-block;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    text-underline-offset: 0.18em;
+}
+
+.volver:hover,
+.volver:focus-visible {
+    text-decoration: underline;
+    outline: none;
+}
+
+h1 {
+    margin: 1.35rem 0 0.75rem;
+    font-size: 1.6rem;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+}
+
+h2 {
+    margin: 1.35rem 0 0.45rem;
+    font-size: 1.05rem;
+    font-weight: 650;
+}
+
+p {
+    margin: 0 0 0.85rem;
+}
+
+.muestra {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+}
+
+#capa p {
+    margin: 0.35rem 0 0;
+}
+
+@media (min-width: 48rem) {
+    main {
+        margin-block: 3rem 4rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}

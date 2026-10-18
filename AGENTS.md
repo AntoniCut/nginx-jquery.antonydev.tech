@@ -8,6 +8,7 @@ Lee `README.md` para el mapa de carpetas. Aquí va cómo se edita.
 
 - Cambia solo la clase o el ejercicio que se pida.
 - Las clases 18 y 19 de EscuelaIT siguen el patrón de carpeta por ejercicio. Las clases 20 a 27 conservan el HTML original; no las reestructures salvo que se pida.
+- Las clases 6 y 7 guardan el CSS y el JS de cada ejemplo en `assets/css/` y `assets/js/` de la clase (`ejemplo-01.css`, `ejemplo-01.js`), y el PDF en `assets/pdf/`. Cada ejemplo solo tiene `index.html`.
 - La clase 28, `clase-28-libreria-de-componentes-jquery-ui`, guarda el CSS y el JS de cada ejercicio en `assets/css/` y `assets/js/` de la clase, con el nombre numerado del ejercicio. Cada ejercicio solo tiene `index.html`. jQuery, jQuery UI y el tema base se cargan desde `/assets/libs/`.
 - `cursos/desarrollowebcom` es un repositorio git anidado. No lo commitees desde este repo.
 - `workflow/` está en `.gitignore`. No lo añadas al commit.
@@ -27,9 +28,9 @@ clase-NN-nombre/
     assets/js/script.js
 ```
 
-- En las clases 18 y 19 el script del ejercicio es `assets/js/script.js` dentro de esa carpeta. No juntes los scripts de varios ejercicios en un `assets/js` de la clase. La clase 28 es la excepción: ahí el CSS y el JS sí viven juntos en el `assets/` de la clase.
+- En las clases 18 y 19 el script del ejercicio es `assets/js/script.js` dentro de esa carpeta. No juntes los scripts de varios ejercicios en un `assets/js` de la clase. Las clases 6, 7 y 28 sí guardan el CSS y el JS juntos en el `assets/` de la clase.
 - El CSS compartido de la clase va en `clase-NN-nombre/assets/css/styles.css`. Las reglas solo de un ejercicio van en su `assets/css/styles.css`.
-- La transición entre las páginas del curso está en `cursos/escuelait/curso-jquery-escuelait/assets/css/view-transition.css`. El índice de cada clase la enlaza con `../assets/css/view-transition.css`. El listado de las clases 1 a 6 está en `assets/css/styles.css`.
+- La transición entre las páginas del curso está en `cursos/escuelait/curso-jquery-escuelait/assets/css/view-transition.css`. El índice de cada clase la enlaza con `../assets/css/view-transition.css`. El listado de las clases 1 a 7 está en `assets/css/styles.css`.
 - Si el ejercicio llama a PHP, el endpoint compartido de la clase vive en `clase-NN-nombre/assets/php/` y el script lo pide con una ruta relativa a esa carpeta.
 
 En el `index.html` del ejercicio:
