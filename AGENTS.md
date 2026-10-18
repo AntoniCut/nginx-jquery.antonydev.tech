@@ -29,7 +29,7 @@ clase-NN-nombre/
 
 - En las clases 18 y 19 el script del ejercicio es `assets/js/script.js` dentro de esa carpeta. No juntes los scripts de varios ejercicios en un `assets/js` de la clase. La clase 28 es la excepción: ahí el CSS y el JS sí viven juntos en el `assets/` de la clase.
 - El CSS compartido de la clase va en `clase-NN-nombre/assets/css/styles.css`. Las reglas solo de un ejercicio van en su `assets/css/styles.css`.
-- La transición entre las páginas del curso está en `cursos/escuelait/curso-jquery-escuelait/assets/css/styles.css`. El índice de cada clase la enlaza con `../assets/css/styles.css`.
+- La transición entre las páginas del curso está en `cursos/escuelait/curso-jquery-escuelait/assets/css/view-transition.css`. El índice de cada clase la enlaza con `../assets/css/view-transition.css`. El listado de las clases 1 a 5 está en `assets/css/styles.css`.
 - Si el ejercicio llama a PHP, el endpoint compartido de la clase vive en `clase-NN-nombre/assets/php/` y el script lo pide con una ruta relativa a esa carpeta.
 
 En el `index.html` del ejercicio:

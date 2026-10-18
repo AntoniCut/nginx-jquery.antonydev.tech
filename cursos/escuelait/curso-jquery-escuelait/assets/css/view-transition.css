@@ -1,0 +1,39 @@
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(root) {
+    animation-duration: 640ms;
+}
+
+::view-transition-old(root) {
+    mix-blend-mode: normal;
+    animation: 640ms cubic-bezier(0.22, 1, 0.36, 1) both curso-escuelait-page-out;
+}
+
+::view-transition-new(root) {
+    mix-blend-mode: normal;
+    animation: 640ms cubic-bezier(0.22, 1, 0.36, 1) both curso-escuelait-page-in;
+}
+
+@keyframes curso-escuelait-page-out {
+    to {
+        opacity: 0;
+        transform: translateX(-32%);
+    }
+}
+
+@keyframes curso-escuelait-page-in {
+    from {
+        opacity: 0;
+        transform: translateX(32%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(root),
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation: none;
+    }
+}

@@ -41,10 +41,15 @@ Manual de jQuery, videotutoriales, jQuery.io, recursos descargados y PDFs. Esa c
 
 `cursos/escuelait/curso-jquery-escuelait/`
 
-Clases 18 a 28. El índice del curso está en `index.html` de esa carpeta. La transición entre clases vive en `assets/css/styles.css`.
+Clases 1 a 5 y 18 a 28. El índice del curso está en `index.html` de esa carpeta. La transición entre páginas vive en `assets/css/view-transition.css`. El listado de las clases 1 a 5 usa `assets/css/styles.css`.
 
 | Clase | Carpeta | Contenido |
 | --- | --- | --- |
+| 1 | `clase-01-introduccion-a-jquery-manual-de-javascript-parte-1` | Manual de programación JavaScript, parte 1, en PDF. |
+| 2 | `clase-02-introduccion-a-jquery-manual-de-javascript-parte-2` | Manual de programación JavaScript, parte 2, en PDF. |
+| 3 | `clase-03-introduccion-a-jquery-manual-de-jquery` | Manual de jQuery en PDF. |
+| 4 | `clase-04-introduccion-a-jquery-manual-de-jquery-mobile` | Manual de jQuery Mobile en PDF. |
+| 5 | `clase-05-introduccion-a-jquery-resumen-de-selectores-jquery` | Resumen de selectores jQuery en PDF. |
 | 18 | `clase-18-formularios-ajax` | Formularios con AJAX. Cinco ejemplos y PHP compartido. |
 | 19 | `clase-19-eventos-avanzados` | Eventos diferidos, parámetros, disparo y eventos personalizados. |
 | 20 | `clase-20-ajax-low-level` | POST, carga de scripts, buscador y selects combinados. |
