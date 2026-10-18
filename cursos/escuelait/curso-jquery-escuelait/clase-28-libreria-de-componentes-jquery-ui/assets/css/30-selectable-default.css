@@ -1,0 +1,29 @@
+/*
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  30-selectable-default.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/30-selectable-default.css  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#selectable .ui-selecting {
+    color: var(--ink);
+    background: #d6ebf8;
+    border-color: var(--accent);
+}
+
+#selectable .ui-selected {
+    color: #ffffff;
+    background: var(--accent);
+    border-color: var(--accent-press);
+}
+
+#selectable {
+    width: min(100%, 24rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#selectable li {
+    margin: 0 0 0.5rem;
+    padding: 0.7rem 0.85rem;
+}

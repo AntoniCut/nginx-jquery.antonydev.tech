@@ -1,0 +1,61 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/05-sortable/06-sortable-items/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Incluir o excluir elementos</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/38-sortable-items.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Sortable</a>
+        <h1>Incluir o excluir elementos</h1>
+
+        <div class="escenario">
+            <h3>Qué elementos se pueden ordenar</h3>
+
+            <ul id="sortable1">
+                <li class="ui-state-default">Elemento 1</li>
+                <li class="ui-state-default ui-state-disabled">No se ordena ni es un destino</li>
+                <li class="ui-state-default ui-state-disabled">No se ordena ni es un destino</li>
+                <li class="ui-state-default">Elemento 4</li>
+            </ul>
+
+            <h3>Cancelar el arrastre y seguir siendo destino</h3>
+
+            <ul id="sortable2">
+                <li class="ui-state-default">Elemento 1</li>
+                <li class="ui-state-default ui-state-disabled">No se puede arrastrar</li>
+                <li class="ui-state-default ui-state-disabled">No se puede arrastrar</li>
+                <li class="ui-state-default">Elemento 4</li>
+            </ul>
+        </div>
+
+        <div class="demo-description">
+            <p><code>items</code> indica qué elementos se pueden ordenar. Los que quedan fuera tampoco sirven como destino.</p>
+            <p><code>cancel</code> impide arrastrarlos, pero siguen siendo un destino válido para los demás.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/38-sortable-items.js"></script>
+</body>
+
+</html>

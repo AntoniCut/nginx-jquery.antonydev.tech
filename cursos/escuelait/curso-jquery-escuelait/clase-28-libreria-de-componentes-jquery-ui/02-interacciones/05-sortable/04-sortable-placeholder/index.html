@@ -1,0 +1,52 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/05-sortable/04-sortable-placeholder/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Hueco al soltar</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/36-sortable-placeholder.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Sortable</a>
+        <h1>Hueco al soltar</h1>
+
+        <div class="escenario">
+            <ul id="sortable">
+                <li class="ui-state-default">Elemento 1</li>
+                <li class="ui-state-default">Elemento 2</li>
+                <li class="ui-state-default">Elemento 3</li>
+                <li class="ui-state-default">Elemento 4</li>
+                <li class="ui-state-default">Elemento 5</li>
+                <li class="ui-state-default">Elemento 6</li>
+                <li class="ui-state-default">Elemento 7</li>
+            </ul>
+        </div>
+
+        <div class="demo-description">
+            <p>Al arrastrar, los demás dejan un hueco. <code>placeholder</code> le pone una clase a ese hueco para que se vea. <code>forcePlaceholderSize</code> le copia el tamaño del elemento.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/36-sortable-placeholder.js"></script>
+</body>
+
+</html>

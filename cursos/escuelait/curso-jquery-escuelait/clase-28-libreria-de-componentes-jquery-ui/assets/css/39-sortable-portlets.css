@@ -1,0 +1,61 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  39-sortable-portlets.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/39-sortable-portlets.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.columnas {
+    display: grid;
+    gap: 0.5rem 1rem;
+}
+
+.column {
+    min-height: 4rem;
+    padding-bottom: 0.5rem;
+}
+
+.portlet {
+    margin: 0 0 1rem;
+    padding: 0.35rem;
+}
+
+.portlet-header {
+    position: relative;
+    margin: 0 0 0.5rem;
+    padding: 0.45rem 2rem 0.45rem 0.7rem;
+    font-size: 1rem;
+    cursor: move;
+}
+
+.portlet-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.45rem;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portlet-content {
+    margin: 0;
+    padding: 0.35rem 0.45rem 0.5rem;
+}
+
+.portlet-placeholder {
+    margin: 0 0 1rem;
+    min-height: 3.5rem;
+    background: #d6ebf8;
+    border: 1px dashed var(--accent);
+    border-radius: var(--radius);
+}
+
+@media (min-width: 48rem) {
+    .columnas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: start;
+    }
+}

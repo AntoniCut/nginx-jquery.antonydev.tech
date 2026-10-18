@@ -1,0 +1,30 @@
+/*
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  22-resizable-constrain-area.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/22-resizable-constrain-area.css  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#container {
+    width: min(100%, 22rem);
+    height: 22rem;
+    padding: 0.85rem;
+}
+
+#container > h3 {
+    margin: 0 0 0.75rem;
+    text-align: center;
+}
+
+#resizable {
+    width: min(100%, 9rem);
+    height: 9rem;
+    padding: 0.85rem;
+    color: var(--ink);
+    background: #d6ebf8;
+    border-color: var(--accent);
+}
+
+#resizable h3 {
+    margin: 0;
+    text-align: center;
+}

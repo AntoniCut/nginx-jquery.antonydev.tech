@@ -1,0 +1,122 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  18-droppable-photo-manager.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/18-droppable-photo-manager.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.gestor {
+    display: grid;
+    gap: 1rem;
+}
+
+#gallery,
+#trash .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery {
+    min-height: 8rem;
+    padding: 0.15rem;
+    border-radius: var(--radius);
+}
+
+.gallery li {
+    width: 6.75rem;
+    margin: 0;
+    padding: 0.45rem 0.45rem 0.35rem;
+    text-align: center;
+}
+
+.gallery li h5 {
+    margin: 0 0 0.4rem;
+    padding: 0.35rem 0.4rem;
+    font-size: 0.78rem;
+    line-height: 1.3;
+    cursor: move;
+}
+
+.gallery li img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    cursor: move;
+}
+
+.gallery li button.ui-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 0.4rem;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.gallery li button.ui-icon-zoomin {
+    float: left;
+}
+
+.gallery li button.ui-icon-trash,
+.gallery li button.ui-icon-refresh {
+    float: right;
+}
+
+#trash {
+    min-height: 10rem;
+    padding: 0.85rem;
+}
+
+#trash h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0;
+}
+
+#trash h4 .ui-icon {
+    flex: 0 0 auto;
+    margin-top: 0;
+}
+
+#trash .gallery {
+    margin-top: 0.75rem;
+}
+
+#trash .gallery h5 {
+    display: none;
+}
+
+#gallery.custom-state-active {
+    background: var(--paper);
+    outline: 2px dashed var(--accent);
+    outline-offset: -2px;
+}
+
+#trash.ui-state-highlight {
+    background: #d6ebf8;
+    border-color: var(--accent);
+}
+
+.ui-dialog {
+    max-width: calc(100vw - 2rem);
+}
+
+.ui-dialog img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 48rem) {
+    .gestor {
+        grid-template-columns: minmax(0, 2fr) minmax(12rem, 1fr);
+        align-items: start;
+    }
+}

@@ -1,0 +1,62 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/05-sortable/05-sortable-empty-lists/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Listas vacías</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/37-sortable-empty-lists.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Sortable</a>
+        <h1>Listas vacías</h1>
+
+        <div class="escenario">
+            <div class="listas">
+                <ul id="sortable1" class="droptrue">
+                    <li class="ui-state-default">Se puede soltar…</li>
+                    <li class="ui-state-default">…en una lista vacía</li>
+                    <li class="ui-state-default">Elemento 3</li>
+                    <li class="ui-state-default">Elemento 4</li>
+                    <li class="ui-state-default">Elemento 5</li>
+                </ul>
+
+                <ul id="sortable2" class="dropfalse">
+                    <li class="ui-state-highlight">No se puede soltar…</li>
+                    <li class="ui-state-highlight">…en una lista vacía</li>
+                    <li class="ui-state-highlight">Elemento 3</li>
+                    <li class="ui-state-highlight">Elemento 4</li>
+                    <li class="ui-state-highlight">Elemento 5</li>
+                </ul>
+
+                <ul id="sortable3" class="droptrue"></ul>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Por defecto se puede soltar en una lista vacía. Con <code>dropOnEmpty: false</code> los elementos de la lista del centro no entran en la lista vacía.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/37-sortable-empty-lists.js"></script>
+</body>
+
+</html>

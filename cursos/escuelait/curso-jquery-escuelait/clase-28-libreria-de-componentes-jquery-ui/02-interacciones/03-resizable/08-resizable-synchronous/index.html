@@ -1,0 +1,50 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/03-resizable/08-resizable-synchronous/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Cambio de tamaño simultáneo</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/27-resizable-synchronous.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Resizable</a>
+        <h1>Cambio de tamaño simultáneo</h1>
+
+        <div class="escenario">
+            <div id="resizable" class="ui-widget-header">
+                <h3 class="ui-state-active">Redimensiona</h3>
+            </div>
+
+            <div id="also" class="ui-widget-content">
+                <h3 class="ui-widget-header">esta también</h3>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p><code>alsoResize</code> cambia el tamaño de otros elementos a la vez. Se le pasa un selector compartido.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/27-resizable-synchronous.js"></script>
+</body>
+
+</html>

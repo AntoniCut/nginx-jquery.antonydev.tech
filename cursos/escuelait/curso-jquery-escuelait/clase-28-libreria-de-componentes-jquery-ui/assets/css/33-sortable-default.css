@@ -1,0 +1,34 @@
+/*
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  33-sortable-default.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/33-sortable-default.css  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.lista,
+#sortable {
+    width: min(100%, 24rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista li,
+#sortable li {
+    position: relative;
+    margin: 0 0 0.5rem;
+    padding: 0.7rem 0.85rem 0.7rem 2.1rem;
+    cursor: grab;
+}
+
+#sortable li .ui-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    margin-top: -8px;
+}
+
+.ui-sortable-placeholder {
+    min-height: 2.75rem;
+    background: #d6ebf8;
+    border: 1px dashed var(--accent);
+}

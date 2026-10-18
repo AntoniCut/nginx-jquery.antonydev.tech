@@ -1,0 +1,42 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  37-sortable-empty-lists.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/37-sortable-empty-lists.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.listas {
+    display: grid;
+    gap: 0.75rem;
+}
+
+#sortable1,
+#sortable2,
+#sortable3 {
+    min-height: 8rem;
+    margin: 0;
+    padding: 0.65rem 0.65rem 0.15rem;
+    list-style: none;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+#sortable1 li,
+#sortable2 li,
+#sortable3 li {
+    margin: 0 0 0.5rem;
+    padding: 0.65rem 0.75rem;
+    cursor: grab;
+}
+
+#sortable3:empty::before {
+    content: "Lista vacía";
+    color: var(--muted);
+}
+
+@media (min-width: 48rem) {
+    .listas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: start;
+    }
+}

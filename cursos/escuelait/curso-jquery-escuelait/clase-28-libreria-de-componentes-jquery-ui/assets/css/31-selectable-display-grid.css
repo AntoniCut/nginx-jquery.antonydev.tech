@@ -1,0 +1,35 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  31-selectable-display-grid.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/31-selectable-display-grid.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#selectable .ui-selecting {
+    color: var(--ink);
+    background: #d6ebf8;
+    border-color: var(--accent);
+}
+
+#selectable .ui-selected {
+    color: #ffffff;
+    background: var(--accent);
+    border-color: var(--accent-press);
+}
+
+#selectable {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#selectable li {
+    display: grid;
+    place-items: center;
+    min-height: 4.75rem;
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 650;
+}

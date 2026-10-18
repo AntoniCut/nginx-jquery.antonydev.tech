@@ -1,0 +1,33 @@
+/*
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  34-sortable-connect-lists.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/34-sortable-connect-lists.css  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.listas {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.lista {
+    min-height: 4rem;
+    margin: 0;
+    padding: 0.65rem 0.65rem 0.15rem;
+    list-style: none;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.lista li {
+    margin: 0 0 0.5rem;
+    padding: 0.65rem 0.75rem;
+    cursor: grab;
+}
+
+@media (min-width: 40rem) {
+    .listas {
+        grid-template-columns: repeat(2, minmax(0, 16rem));
+        align-items: start;
+    }
+}

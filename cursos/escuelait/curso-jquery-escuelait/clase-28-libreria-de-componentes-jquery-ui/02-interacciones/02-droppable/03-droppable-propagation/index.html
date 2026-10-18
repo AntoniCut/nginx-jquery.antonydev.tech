@@ -1,0 +1,60 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/02-droppable/03-droppable-propagation/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Evitar la propagación</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/16-droppable-propagation.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Droppable</a>
+        <h1>Evitar la propagación</h1>
+
+        <div class="escenario">
+            <div id="draggable" class="ui-widget-content">
+                <p>Arrástrame hasta el destino</p>
+            </div>
+
+            <div id="droppable" class="zona ui-widget-header">
+                <p>Destino exterior</p>
+                <div id="droppable-inner" class="zona-interior ui-widget-header">
+                    <p>Destino interior, sin <code>greedy</code></p>
+                </div>
+            </div>
+
+            <div id="droppable2" class="zona ui-widget-header">
+                <p>Destino exterior</p>
+                <div id="droppable2-inner" class="zona-interior ui-widget-header">
+                    <p>Destino interior, con <code>greedy</code></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Si los destinos están anidados, el padre también recibe el evento. Con <code>greedy: true</code> solo cuenta el hijo que está bajo el cursor.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/16-droppable-propagation.js"></script>
+</body>
+
+</html>

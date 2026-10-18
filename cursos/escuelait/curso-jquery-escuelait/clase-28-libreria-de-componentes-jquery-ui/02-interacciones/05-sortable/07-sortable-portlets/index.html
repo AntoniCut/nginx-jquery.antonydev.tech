@@ -1,0 +1,75 @@
+<!--
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/05-sortable/07-sortable-portlets/index.html  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Paneles</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/39-sortable-portlets.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Sortable</a>
+        <h1>Paneles</h1>
+
+        <div class="escenario">
+            <div class="columnas">
+                <div class="column">
+                    <section class="portlet ui-widget ui-widget-content ui-corner-all">
+                        <h3 class="portlet-header ui-widget-header ui-corner-all">Fuentes</h3>
+                        <p class="portlet-content">Novedades de los sitios que sigues.</p>
+                    </section>
+
+                    <section class="portlet ui-widget ui-widget-content ui-corner-all">
+                        <h3 class="portlet-header ui-widget-header ui-corner-all">Noticias</h3>
+                        <p class="portlet-content">Titulares del día, listos para reordenar.</p>
+                    </section>
+                </div>
+
+                <div class="column">
+                    <section class="portlet ui-widget ui-widget-content ui-corner-all">
+                        <h3 class="portlet-header ui-widget-header ui-corner-all">Compras</h3>
+                        <p class="portlet-content">Una lista corta de pendientes.</p>
+                    </section>
+                </div>
+
+                <div class="column">
+                    <section class="portlet ui-widget ui-widget-content ui-corner-all">
+                        <h3 class="portlet-header ui-widget-header ui-corner-all">Enlaces</h3>
+                        <p class="portlet-content">Accesos que quieres tener a mano.</p>
+                    </section>
+
+                    <section class="portlet ui-widget ui-widget-content ui-corner-all">
+                        <h3 class="portlet-header ui-widget-header ui-corner-all">Imágenes</h3>
+                        <p class="portlet-content">Un hueco para las fotos recientes.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Estos paneles se ordenan por la cabecera. <code>connectWith</code> permite pasarlos de una columna a otra. El botón de la cabecera los pliega y no inicia el arrastre.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/39-sortable-portlets.js"></script>
+</body>
+
+</html>

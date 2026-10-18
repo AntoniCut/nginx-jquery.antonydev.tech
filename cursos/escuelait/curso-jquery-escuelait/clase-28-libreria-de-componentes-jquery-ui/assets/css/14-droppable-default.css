@@ -1,0 +1,45 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  14-droppable-default.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/14-droppable-default.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#draggable,
+#draggable2,
+#draggable-nonvalid,
+#droppable,
+#droppable2 {
+    float: left;
+    margin: 0 0.75rem 0.75rem 0;
+    padding: 0.85rem;
+}
+
+#draggable,
+#draggable2,
+#draggable-nonvalid {
+    width: min(100%, 11rem);
+    min-height: 8rem;
+    cursor: move;
+}
+
+#droppable,
+#droppable2 {
+    width: min(100%, 12rem);
+    min-height: 9rem;
+}
+
+#droppable.ui-state-highlight,
+#droppable2.ui-state-highlight {
+    color: #ffffff;
+    background: var(--accent);
+    border-color: var(--accent-press);
+}
+
+#droppable.ui-state-hover,
+#droppable2.ui-state-hover,
+#droppable.ui-state-active,
+#droppable2.ui-state-active {
+    color: var(--ink);
+    background: #d6ebf8;
+    border-color: var(--accent);
+}

@@ -56,7 +56,7 @@ Clases 18 a 28. El índice del curso está en `index.html` de esa carpeta. La tr
 | 26 | `clase-26-variables-gestion-opciones-plugins` | `$.extend`, FontSizer, Hilight y ajaxForm. |
 | 27 | `clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-1` | Boilerplate de un plugin. |
 | 27 | `clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-2` | Plugin de validación avanzada. |
-| 28 | `clase-28-libreria-de-componentes-jquery-ui` | Método on e interacciones de jQuery UI, empezando por draggable. |
+| 28 | `clase-28-libreria-de-componentes-jquery-ui` | Método on e interacciones de jQuery UI: draggable, droppable, resizable, selectable y sortable. |
 
 Las clases 18 y 19 usan una carpeta por ejercicio, con su CSS y su JS dentro. La clase 28 agrupa el CSS y el JS de los ejercicios en `assets/` de la clase. El resto conserva el HTML original, en archivos sueltos.
 
@@ -94,9 +94,36 @@ clase-28-libreria-de-componentes-jquery-ui/
     11-draggable-revert.css
     12-draggable-snap-to.css
     13-draggable-visual-feedback.css
+    14-droppable-default.css
+    15-droppable-accept.css
+    16-droppable-propagation.css
+    17-droppable-revert.css
+    18-droppable-photo-manager.css
+    19-droppable-visual-feedback.css
+    20-resizable-default.css
+    21-resizable-animate.css
+    22-resizable-constrain-area.css
+    23-resizable-helper.css
+    24-resizable-max-min.css
+    25-resizable-aspect-ratio.css
+    26-resizable-snap-to-grid.css
+    27-resizable-synchronous.css
+    28-resizable-textarea.css
+    29-resizable-visual-feedback.css
+    30-selectable-default.css
+    31-selectable-display-grid.css
+    32-selectable-serialize.css
+    33-sortable-default.css
+    34-sortable-connect-lists.css
+    35-sortable-display-grid.css
+    36-sortable-placeholder.css
+    37-sortable-empty-lists.css
+    38-sortable-items.css
+    39-sortable-portlets.css
     styles.css
   assets/js/
     el mismo nombre que cada CSS de ejercicio, con extensión .js
+  assets/img/gestor-fotos/
   01-metodo-on/
     01-metodo-on-sin-delegacion/
     02-metodo-on-con-delegacion/

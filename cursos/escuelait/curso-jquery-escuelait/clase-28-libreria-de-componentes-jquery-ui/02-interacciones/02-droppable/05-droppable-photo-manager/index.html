@@ -1,0 +1,76 @@
+<!--
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/02-droppable/05-droppable-photo-manager/index.html  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Gestor de fotos</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/18-droppable-photo-manager.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Droppable</a>
+        <h1>Gestor de fotos</h1>
+
+        <div class="escenario">
+            <div class="gestor">
+                <ul id="gallery" class="gallery ui-helper-reset">
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Altos Tatras</h5>
+                        <img src="../../../assets/img/gestor-fotos/high_tatras_min.jpg" alt="Las cumbres de los Altos Tatras" width="96" height="72">
+                        <button type="button" class="ui-icon ui-icon-zoomin" data-src="../../../assets/img/gestor-fotos/high_tatras.jpg" data-titulo="Las cumbres de los Altos Tatras">Ampliar</button>
+                        <button type="button" class="ui-icon ui-icon-trash">Eliminar imagen</button>
+                    </li>
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Altos Tatras 2</h5>
+                        <img src="../../../assets/img/gestor-fotos/high_tatras2_min.jpg" alt="El refugio junto al lago de montaña" width="96" height="72">
+                        <button type="button" class="ui-icon ui-icon-zoomin" data-src="../../../assets/img/gestor-fotos/high_tatras2.jpg" data-titulo="El refugio junto al lago de montaña">Ampliar</button>
+                        <button type="button" class="ui-icon ui-icon-trash">Eliminar imagen</button>
+                    </li>
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Altos Tatras 3</h5>
+                        <img src="../../../assets/img/gestor-fotos/high_tatras3_min.jpg" alt="Preparando la ascensión" width="96" height="72">
+                        <button type="button" class="ui-icon ui-icon-zoomin" data-src="../../../assets/img/gestor-fotos/high_tatras3.jpg" data-titulo="Preparando la ascensión">Ampliar</button>
+                        <button type="button" class="ui-icon ui-icon-trash">Eliminar imagen</button>
+                    </li>
+                    <li class="ui-widget-content ui-corner-tr">
+                        <h5 class="ui-widget-header">Altos Tatras 4</h5>
+                        <img src="../../../assets/img/gestor-fotos/high_tatras4_min.jpg" alt="En la cima de Kozi kopka" width="96" height="72">
+                        <button type="button" class="ui-icon ui-icon-zoomin" data-src="../../../assets/img/gestor-fotos/high_tatras4.jpg" data-titulo="En la cima de Kozi kopka">Ampliar</button>
+                        <button type="button" class="ui-icon ui-icon-trash">Eliminar imagen</button>
+                    </li>
+                </ul>
+
+                <div id="trash" class="ui-widget-content ui-state-default">
+                    <h4 class="ui-widget-header"><span class="ui-icon ui-icon-trash" aria-hidden="true"></span>Papelera</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>Puedes borrar una foto arrastrándola a la papelera o con su icono. Vuelve a la galería si la arrastras de vuelta o con el icono de recuperar.</p>
+            <p>El icono de ampliar abre la foto grande en un diálogo de jQuery UI.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/18-droppable-photo-manager.js"></script>
+</body>
+
+</html>

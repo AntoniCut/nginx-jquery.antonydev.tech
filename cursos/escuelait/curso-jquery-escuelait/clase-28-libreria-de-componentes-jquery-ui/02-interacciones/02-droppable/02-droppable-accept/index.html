@@ -1,0 +1,54 @@
+<!--
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/02-droppable/02-droppable-accept/index.html  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Aceptar</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/15-droppable-accept.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Droppable</a>
+        <h1>Aceptar</h1>
+
+        <div class="escenario">
+            <div id="draggable-nonvalid" class="ui-widget-content">
+                <p>Puedo arrastrarme, pero no me acepta</p>
+            </div>
+
+            <div id="draggable" class="ui-widget-content">
+                <p>Arrástrame hasta el destino</p>
+            </div>
+
+            <div id="droppable" class="ui-widget-header">
+                <p><code>accept: "#draggable"</code></p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p><code>accept</code> indica qué elemento, o grupo de elementos, admite el destino. El otro se arrastra, pero al soltarlo no cuenta.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/15-droppable-accept.js"></script>
+</body>
+
+</html>

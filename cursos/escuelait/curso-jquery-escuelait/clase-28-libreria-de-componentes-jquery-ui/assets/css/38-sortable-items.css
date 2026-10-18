@@ -1,0 +1,25 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  38-sortable-items.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/38-sortable-items.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#sortable1,
+#sortable2 {
+    width: min(100%, 28rem);
+    margin: 0 0 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+#sortable1 li,
+#sortable2 li {
+    margin: 0 0 0.5rem;
+    padding: 0.7rem 0.85rem;
+    cursor: grab;
+}
+
+#sortable1 li.ui-state-disabled,
+#sortable2 li.ui-state-disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,44 @@
+/*
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  16-droppable-propagation.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/16-droppable-propagation.css  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#draggable {
+    width: min(100%, 11rem);
+    min-height: 3.5rem;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    cursor: move;
+}
+
+.zona {
+    float: left;
+    width: min(100%, 18rem);
+    min-height: 10rem;
+    margin: 0 0.75rem 0.75rem 0;
+    padding: 0.75rem;
+}
+
+.zona-interior {
+    width: min(100%, 14rem);
+    min-height: 4.75rem;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+}
+
+.zona.ui-state-active,
+.zona-interior.ui-state-active,
+.zona.ui-state-hover,
+.zona-interior.ui-state-hover {
+    color: var(--ink);
+    background: #d6ebf8;
+    border-color: var(--accent);
+}
+
+.zona.ui-state-highlight,
+.zona-interior.ui-state-highlight {
+    color: #ffffff;
+    background: var(--accent);
+    border-color: var(--accent-press);
+}

@@ -1,0 +1,27 @@
+/*
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  23-resizable-helper.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/assets/css/23-resizable-helper.css  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#resizable,
+#also {
+    width: min(100%, 12rem);
+    height: 12rem;
+    padding: 0.85rem;
+}
+
+#resizable h3,
+#also h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.ui-resizable-helper {
+    border: 2px dotted var(--accent);
+}
+
+.ui-resizable-ghost {
+    border: 1px dotted var(--accent);
+    opacity: 0.55;
+}

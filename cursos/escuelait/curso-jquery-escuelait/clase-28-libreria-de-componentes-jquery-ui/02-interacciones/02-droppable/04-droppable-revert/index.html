@@ -1,0 +1,54 @@
+<!--
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-28-libreria-de-componentes-jquery-ui/02-interacciones/02-droppable/04-droppable-revert/index.html  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Volver a la posición</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/17-droppable-revert.css">
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../index.html">Droppable</a>
+        <h1>Volver a la posición</h1>
+
+        <div class="escenario">
+            <div id="draggable" class="ui-widget-content">
+                <p>Vuelvo cuando me sueltan en el destino</p>
+            </div>
+
+            <div id="draggable2" class="ui-widget-content">
+                <p>Vuelvo cuando no me sueltan en el destino</p>
+            </div>
+
+            <div id="droppable" class="ui-widget-header">
+                <p>Suéltame aquí</p>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p><code>revert</code> devuelve el elemento a su sitio al terminar el arrastre. <code>"valid"</code> vuelve si el destino lo aceptó. <code>"invalid"</code> vuelve si no hubo un destino válido.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../../assets/js/17-droppable-revert.js"></script>
+</body>
+
+</html>
