@@ -1,0 +1,13 @@
+/*
+    *  ------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  84-tooltip-style.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/84-tooltip-style.css  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.aviso {
+    color: #ffffff;
+    background: #0769ad;
+    background-image: none;
+    border: 0;
+    border-radius: 0.5rem;
+}

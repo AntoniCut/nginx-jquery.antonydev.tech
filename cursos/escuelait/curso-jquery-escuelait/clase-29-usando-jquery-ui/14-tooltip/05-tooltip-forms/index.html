@@ -1,0 +1,60 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/14-tooltip/05-tooltip-forms/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/85-tooltip-forms.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Tooltip</a>
+        <h1>Formularios</h1>
+
+        <div class="escenario">
+            <form id="perfil">
+                <p class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" title="Nombre y apellidos">
+                </p>
+                <p class="campo">
+                    <label for="edad">Edad</label>
+                    <input id="edad" type="number" title="Edad en años">
+                </p>
+                <p class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input id="ciudad" type="text" title="Ciudad de residencia">
+                </p>
+                <button type="submit">Guardar</button>
+            </form>
+            <p id="resultado" class="nota"></p>
+        </div>
+
+        <div class="demo-description">
+            <p>Cada campo explica, en su ayuda, qué dato se espera.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/85-tooltip-forms.js"></script>
+</body>
+
+</html>

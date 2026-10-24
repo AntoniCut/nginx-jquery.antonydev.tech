@@ -1,0 +1,49 @@
+<!--
+    *  --------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/02-autocomplete/08-autocomplete-remote/index.html  -----  *
+    *  --------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Origen remoto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/14-autocomplete-remote.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Autocomplete</a>
+        <h1>Origen remoto</h1>
+
+        <div class="escenario">
+            <p class="campo">
+                <label for="ciudad">Ciudad</label>
+                <input id="ciudad" type="text" autocomplete="off">
+            </p>
+            <p id="estado" class="nota">Escribe al menos dos letras.</p>
+        </div>
+
+        <div class="demo-description">
+            <p>La demo oficial pide las coincidencias a un servidor. Aquí la espera es local y la lista de ciudades viaja con la página.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/14-autocomplete-remote.js"></script>
+</body>
+
+</html>

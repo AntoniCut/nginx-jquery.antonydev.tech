@@ -1,0 +1,16 @@
+/*
+    *  ----------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  10-autocomplete-combobox.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/10-autocomplete-combobox.css  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.custom-combobox {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.custom-combobox-input {
+    width: min(100%, 16rem);
+    margin: 0;
+}

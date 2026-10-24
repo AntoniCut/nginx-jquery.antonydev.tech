@@ -1,0 +1,17 @@
+/*
+    *  ----------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  60-slider-multiple.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/60-slider-multiple.css  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.eje {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.85rem 0 0.35rem;
+}
+
+#volumen,
+#brillo,
+#zoom {
+    margin: 0 0.6rem 0.4rem;
+}

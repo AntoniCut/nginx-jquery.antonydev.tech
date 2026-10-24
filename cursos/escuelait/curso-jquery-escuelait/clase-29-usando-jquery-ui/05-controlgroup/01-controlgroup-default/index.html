@@ -1,0 +1,83 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/05-controlgroup/01-controlgroup-default/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Funcionalidad por defecto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/25-controlgroup-default.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Controlgroup</a>
+        <h1>Funcionalidad por defecto</h1>
+
+        <div class="escenario">
+            <h2>Horizontal</h2>
+            <div class="controlgroup">
+            <label for="h-tipo" class="ui-controlgroup-label">Coche</label>
+            <select id="h-tipo">
+                <option>Compacto</option>
+                <option>Mediano</option>
+                <option>Grande</option>
+                <option>SUV</option>
+                <option>Lujo</option>
+                <option>Furgoneta</option>
+            </select>
+            <label for="h-auto">Automático</label>
+            <input type="checkbox" id="h-auto">
+            <label for="h-seguro">Seguro</label>
+            <input type="checkbox" id="h-seguro">
+            <label for="h-cantidad" class="ui-controlgroup-label">Coches</label>
+            <input id="h-cantidad" class="ui-spinner-input" value="1">
+            <button type="button" id="h-reservar">Reservar</button>
+            </div>
+            <h2>Vertical</h2>
+            <div class="controlgroup-vertical">
+            <label for="v-tipo" class="ui-controlgroup-label">Coche</label>
+            <select id="v-tipo">
+                <option>Compacto</option>
+                <option>Mediano</option>
+                <option>Grande</option>
+                <option>SUV</option>
+                <option>Lujo</option>
+                <option>Furgoneta</option>
+            </select>
+            <label for="v-auto">Automático</label>
+            <input type="checkbox" id="v-auto">
+            <label for="v-seguro">Seguro</label>
+            <input type="checkbox" id="v-seguro">
+            <label for="v-cantidad" class="ui-controlgroup-label">Coches</label>
+            <input id="v-cantidad" class="ui-spinner-input" value="1">
+            <button type="button" id="v-reservar">Reservar</button>
+            </div>
+            <p id="resultado" class="nota">Pulsa Reservar.</p>
+        </div>
+
+        <div class="demo-description">
+            <p>El mismo formulario en horizontal y en vertical. <code>direction: "vertical"</code> apila los controles.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/25-controlgroup-default.js"></script>
+</body>
+
+</html>

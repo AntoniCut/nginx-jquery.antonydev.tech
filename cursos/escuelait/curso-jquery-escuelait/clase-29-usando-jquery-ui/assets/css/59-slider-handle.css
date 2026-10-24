@@ -1,0 +1,19 @@
+/*
+    *  ------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  59-slider-handle.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/59-slider-handle.css  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#slider {
+    margin: 1.4rem 1.4rem 1rem;
+}
+
+#custom-handle {
+    width: 2.4rem;
+    height: 1.5rem;
+    top: 50%;
+    margin-top: -0.75rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}

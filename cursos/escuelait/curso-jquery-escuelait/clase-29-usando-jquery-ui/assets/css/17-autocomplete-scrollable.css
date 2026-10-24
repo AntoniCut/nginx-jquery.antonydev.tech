@@ -1,0 +1,15 @@
+/*
+    *  --------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  17-autocomplete-scrollable.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/17-autocomplete-scrollable.css  -----  *
+    *  --------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.campo input {
+    width: min(100%, 22rem);
+}
+
+.ui-autocomplete {
+    max-height: 10rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

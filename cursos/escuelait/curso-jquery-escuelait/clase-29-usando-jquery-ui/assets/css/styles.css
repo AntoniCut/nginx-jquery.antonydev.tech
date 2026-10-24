@@ -1,0 +1,235 @@
+/*
+    *  ----------------------------------------------------------------------------------------------------------------------  *
+    *  -----  styles.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/styles.css  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------------  *
+*/
+
+:root {
+    color-scheme: light;
+    --ink: #1c2430;
+    --muted: #5c6775;
+    --line: #d7dee7;
+    --paper: #f4f7fb;
+    --card: #ffffff;
+    --accent: #0769ad;
+    --accent-press: #054e82;
+    --tint: #f3f8fc;
+    --header: #e7f3fb;
+    --radius: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    text-size-adjust: 100%;
+    scrollbar-color: #b7c6d4 var(--paper);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--ink);
+    background: var(--paper);
+    caret-color: var(--accent);
+}
+
+::selection {
+    color: var(--ink);
+    background: #c5dff3;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+main {
+    width: min(52rem, calc(100% - 2rem));
+    margin: 1.5rem auto 2.5rem;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--accent);
+    font-weight: 650;
+    text-decoration: none;
+    text-underline-offset: 0.2em;
+}
+
+.volver:hover,
+.volver:focus-visible {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+}
+
+main > p {
+    margin: 0 0 1.5rem;
+    max-width: 65ch;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.fuente {
+    color: var(--accent);
+    font-weight: 650;
+    text-underline-offset: 0.2em;
+}
+
+.fuente:hover,
+.fuente:focus-visible {
+    color: var(--accent-press);
+}
+
+main > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+main > ul a {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.9rem 1.05rem;
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+main > ul a:hover,
+main > ul a:focus-visible {
+    border-color: var(--accent);
+    background: var(--tint);
+}
+
+main > ul a span {
+    flex: 0 0 2.25rem;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-weight: 650;
+    text-align: end;
+}
+
+main > ul a strong {
+    font-size: 1.05rem;
+    font-weight: 650;
+}
+
+.escenario {
+    display: flow-root;
+    margin: 1.25rem 0 0;
+    padding: 1rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.demo-description {
+    clear: both;
+    max-width: 65ch;
+    margin-top: 1.25rem;
+}
+
+.demo-description p {
+    margin: 0 0 0.85rem;
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.demo-description p:last-child {
+    margin-bottom: 0;
+}
+
+code {
+    padding: 0.08em 0.35em;
+    font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+    font-size: 0.92em;
+    color: var(--ink);
+    background: #e7eef5;
+    border-radius: 0.3rem;
+}
+
+.nota {
+    margin: 0.85rem 0 0;
+    color: var(--muted);
+}
+
+.ui-widget {
+    font-family: "Segoe UI", sans-serif;
+}
+
+@media (min-width: 48rem) {
+    main {
+        margin-block: 3rem 4rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .escenario {
+        padding: 1.25rem;
+    }
+}
+
+::view-transition-group(root) {
+    animation-duration: 640ms;
+}
+
+::view-transition-old(root) {
+    mix-blend-mode: normal;
+    animation: 640ms cubic-bezier(0.22, 1, 0.36, 1) both clase-29-page-out;
+}
+
+::view-transition-new(root) {
+    mix-blend-mode: normal;
+    animation: 640ms cubic-bezier(0.22, 1, 0.36, 1) both clase-29-page-in;
+}
+
+@keyframes clase-29-page-out {
+    to {
+        opacity: 0;
+        transform: translateX(-32%);
+    }
+}
+
+@keyframes clase-29-page-in {
+    from {
+        opacity: 0;
+        transform: translateX(32%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    main > ul a {
+        transition: none;
+    }
+
+    ::view-transition-group(root),
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation: none;
+    }
+}

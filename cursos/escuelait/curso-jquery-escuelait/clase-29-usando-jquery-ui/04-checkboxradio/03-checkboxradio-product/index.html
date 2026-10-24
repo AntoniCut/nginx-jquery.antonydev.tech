@@ -1,0 +1,68 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/04-checkboxradio/03-checkboxradio-product/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Selector de producto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/23-checkboxradio-product.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Checkboxradio</a>
+        <h1>Selector de producto</h1>
+
+        <div class="escenario">
+            <fieldset>
+                <legend>Color</legend>
+                <label for="azul">Azul</label>
+                <input type="radio" name="color" id="azul" value="azul" checked>
+                <label for="verde">Verde</label>
+                <input type="radio" name="color" id="verde" value="verde">
+                <label for="negro">Negro</label>
+                <input type="radio" name="color" id="negro" value="negro">
+            </fieldset>
+            <fieldset>
+                <legend>Talla</legend>
+                <label for="s">S</label>
+                <input type="radio" name="talla" id="s" value="S">
+                <label for="m">M</label>
+                <input type="radio" name="talla" id="m" value="M" checked>
+                <label for="l">L</label>
+                <input type="radio" name="talla" id="l" value="L">
+            </fieldset>
+            <fieldset>
+                <legend>Extra</legend>
+                <label for="regalo">Envoltorio</label>
+                <input type="checkbox" id="regalo">
+            </fieldset>
+            <p id="resumen" class="nota">Camiseta azul, talla M, sin envoltorio.</p>
+        </div>
+
+        <div class="demo-description">
+            <p>Color, talla y envoltorio actualizan el resumen al cambiar la selección.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/23-checkboxradio-product.js"></script>
+</body>
+
+</html>

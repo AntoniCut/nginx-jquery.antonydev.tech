@@ -1,0 +1,59 @@
+<!--
+    *  ------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/07-dialog/04-dialog-modal-form/index.html  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Formulario modal</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/45-dialog-modal-form.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Dialog</a>
+        <h1>Formulario modal</h1>
+
+        <div class="escenario">
+            <button type="button" id="abrir">Crear cuenta</button>
+            <p id="resultado" class="nota">Todavía no hay una cuenta.</p>
+            <div id="dialog" title="Nueva cuenta">
+                <form id="cuenta">
+                    <p class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="name">
+                    </p>
+                    <p class="campo">
+                        <label for="correo">Correo</label>
+                        <input id="correo" name="correo" type="email" autocomplete="email">
+                    </p>
+                    <p id="aviso" class="nota"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p>El formulario vive dentro de la ventana. Si falta el nombre o el correo, el aviso queda en la propia ventana.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/45-dialog-modal-form.js"></script>
+</body>
+
+</html>

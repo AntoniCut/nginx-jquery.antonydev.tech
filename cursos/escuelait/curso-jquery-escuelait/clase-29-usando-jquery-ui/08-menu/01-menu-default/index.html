@@ -1,0 +1,71 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/08-menu/01-menu-default/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Funcionalidad por defecto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/47-menu-default.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Menu</a>
+        <h1>Funcionalidad por defecto</h1>
+
+        <div class="escenario">
+            <ul id="menu">
+                <li class="ui-state-disabled"><div>Juguetes (no disponible)</div></li>
+                <li><div>Libros</div></li>
+                <li><div>Ropa</div></li>
+                <li>
+                    <div>Electrónica</div>
+                    <ul>
+                        <li><div>Televisión</div></li>
+                        <li><div>Sonido del coche</div></li>
+                        <li><div>Utilidades</div></li>
+                    </ul>
+                </li>
+                <li>
+                    <div>Cine</div>
+                    <ul>
+                        <li><div>Acción</div></li>
+                        <li>
+                            <div>Música</div>
+                            <ul>
+                                <li><div>Rock</div></li>
+                                <li><div>Jazz</div></li>
+                                <li class="ui-state-disabled"><div>Especiales (no disponible)</div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="demo-description">
+            <p>Hay elementos desactivados y submenús. Tabulador lleva el foco al menú y las flechas lo recorren.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/47-menu-default.js"></script>
+</body>
+
+</html>

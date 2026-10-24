@@ -1,0 +1,74 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/04-checkboxradio/01-checkboxradio-default/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Funcionalidad por defecto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/21-checkboxradio-default.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Checkboxradio</a>
+        <h1>Funcionalidad por defecto</h1>
+
+        <div class="escenario">
+            <fieldset>
+                <legend>Ubicación</legend>
+                <label for="nueva-york">Nueva York</label>
+                <input type="radio" name="lugar" id="nueva-york" value="Nueva York" checked>
+                <label for="paris">París</label>
+                <input type="radio" name="lugar" id="paris" value="París">
+                <label for="londres">Londres</label>
+                <input type="radio" name="lugar" id="londres" value="Londres">
+            </fieldset>
+            <fieldset>
+                <legend>Valoración del hotel</legend>
+                <label for="dos">2 estrellas</label>
+                <input type="checkbox" id="dos">
+                <label for="tres">3 estrellas</label>
+                <input type="checkbox" id="tres">
+                <label for="cuatro">4 estrellas</label>
+                <input type="checkbox" id="cuatro">
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de cama</legend>
+                <label for="doble">2 camas dobles
+                    <input type="checkbox" id="doble">
+                </label>
+                <label for="queen">1 cama queen
+                    <input type="checkbox" id="queen">
+                </label>
+                <label for="king">1 cama king
+                    <input type="checkbox" id="king">
+                </label>
+            </fieldset>
+        </div>
+
+        <div class="demo-description">
+            <p>Radios y casillas con icono. La etiqueta puede ir aparte o envolver el control.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/21-checkboxradio-default.js"></script>
+</body>
+
+</html>

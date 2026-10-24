@@ -1,0 +1,23 @@
+/*
+    *  ----------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  68-spinner-default.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/68-spinner-default.css  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0 0 0.85rem;
+}
+
+.campo input {
+    width: 6rem;
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}

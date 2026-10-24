@@ -1,0 +1,70 @@
+<!--
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/01-accordion/04-accordion-fill-space/index.html  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Rellenar el espacio</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/04-accordion-fill-space.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Accordion</a>
+        <h1>Rellenar el espacio</h1>
+
+        <div class="escenario">
+            <div id="accordion-resizer">
+                <div id="accordion">
+            <h3>Sección 1</h3>
+            <div>
+                <p>El primer panel se abre al cargar. El resto permanece cerrado hasta que se pulsa su cabecera.</p>
+            </div>
+            <h3>Sección 2</h3>
+            <div>
+                <p>Este panel guarda un segundo bloque de texto. Al abrirlo, el anterior se cierra.</p>
+            </div>
+            <h3>Sección 3</h3>
+            <div>
+                <p>El tercer panel incluye una lista:</p>
+                <ul>
+                    <li>Primer punto</li>
+                    <li>Segundo punto</li>
+                    <li>Tercer punto</li>
+                </ul>
+            </div>
+            <h3>Sección 4</h3>
+            <div>
+                <p>El último panel cierra el grupo.</p>
+                <p>Las cabeceras son títulos y el texto sigue en la página aunque no haya JavaScript.</p>
+            </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-description">
+            <p><code>heightStyle: "fill"</code> reparte la altura del marco entre la cabecera y el panel abierto. Al cambiar el tamaño del marco, <code>refresh</code> vuelve a calcular esa altura.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/04-accordion-fill-space.js"></script>
+</body>
+
+</html>

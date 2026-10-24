@@ -41,7 +41,7 @@ Manual de jQuery, videotutoriales, jQuery.io, recursos descargados y PDFs. Esa c
 
 `cursos/escuelait/curso-jquery-escuelait/`
 
-Clases 1 a 7 y 18 a 28. El índice del curso está en `index.html` de esa carpeta. La transición entre páginas vive en `assets/css/view-transition.css`. El listado de las clases 1 a 7 usa `assets/css/styles.css`.
+Clases 1 a 7 y 18 a 29. El índice del curso está en `index.html` de esa carpeta. La transición entre páginas vive en `assets/css/view-transition.css`. El listado de las clases 1 a 7 usa `assets/css/styles.css`.
 
 | Clase | Carpeta | Contenido |
 | --- | --- | --- |
@@ -64,6 +64,7 @@ Clases 1 a 7 y 18 a 28. El índice del curso está en `index.html` de esa carpet
 | 27 | `clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-1` | Boilerplate de un plugin. |
 | 27 | `clase-27-tecnicas-para-desarrollo-de-plugins-complejos-version-2` | Plugin de validación avanzada. |
 | 28 | `clase-28-libreria-de-componentes-jquery-ui` | Método on e interacciones de jQuery UI: draggable, droppable, resizable, selectable y sortable. |
+| 29 | `clase-29-usando-jquery-ui` | Widgets de jQuery UI, con las demos de jqueryui.com. |
 
 Las clases 18 y 19 usan una carpeta por ejercicio, con su CSS y su JS dentro. Las clases 6 y 7 guardan el CSS y el JS de cada ejemplo en `assets/` de la clase, y el PDF en `assets/pdf/`. La clase 28 agrupa el CSS y el JS de los ejercicios en `assets/` de la clase. El resto conserva el HTML original, en archivos sueltos.
 
@@ -142,6 +143,8 @@ clase-28-libreria-de-componentes-jquery-ui/
     04-selectable/
     05-sortable/
 ```
+
+La clase 29 agrupa los widgets de jQuery UI del mismo modo: un `index.html` por ejercicio y el CSS y el JS numerados en `assets/` de la clase. El detalle está en `clase-29-usando-jquery-ui/README.md`.
 
 ### Udemy
 

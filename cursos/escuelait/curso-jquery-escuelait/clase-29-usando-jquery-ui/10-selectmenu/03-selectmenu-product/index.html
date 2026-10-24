@@ -1,0 +1,54 @@
+<!--
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/10-selectmenu/03-selectmenu-product/index.html  -----  *
+    *  -----------------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Selección de producto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/56-selectmenu-product.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Selectmenu</a>
+        <h1>Selección de producto</h1>
+
+        <div class="escenario">
+            <p class="campo">
+                <label for="producto">Producto</label>
+                <select id="producto">
+                    <option data-desc="Biblioteca para recorrer el DOM">jQuery</option>
+                    <option data-desc="Widgets, interacciones y efectos" selected>jQuery UI</option>
+                    <option data-desc="Motor de selectores">Sizzle</option>
+                    <option data-desc="Pruebas en el navegador">QUnit</option>
+                </select>
+            </p>
+            <p id="resultado" class="nota">Producto: jQuery UI.</p>
+        </div>
+
+        <div class="demo-description">
+            <p>Cada opción muestra el nombre y una descripción. El campo se queda con el producto elegido.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/56-selectmenu-product.js"></script>
+</body>
+
+</html>

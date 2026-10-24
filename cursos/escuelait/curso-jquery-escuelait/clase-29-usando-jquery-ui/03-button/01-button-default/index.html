@@ -1,0 +1,56 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/03-button/01-button-default/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Funcionalidad por defecto</title>
+    <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/19-button-default.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Button</a>
+        <h1>Funcionalidad por defecto</h1>
+
+        <div class="escenario">
+            <section class="widget">
+                <h2>Con el widget</h2>
+                <button type="button">Un botón</button>
+                <input type="submit" value="Enviar">
+                <a href="#boton">Un enlace</a>
+            </section>
+            <section>
+                <h2>Solo con CSS</h2>
+                <button type="button" class="ui-button ui-corner-all">Un botón</button>
+                <input type="submit" class="ui-button ui-corner-all" value="Enviar">
+                <a class="ui-button ui-corner-all" href="#boton">Un enlace</a>
+            </section>
+        </div>
+
+        <div class="demo-description">
+            <p>El primer grupo usa el widget. El segundo solo lleva las clases, sin JavaScript. Los clics no salen de la página.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
+    <script src="../../assets/js/19-button-default.js"></script>
+</body>
+
+</html>
