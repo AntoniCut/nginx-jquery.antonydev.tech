@@ -1,0 +1,45 @@
+/*
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  03-selectmenu-product.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/10-selectmenu/03-selectmenu-product.css  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+#circulo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.25rem;
+    border-radius: 50%;
+    background: yellow;
+}
+
+.controles {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-inline-size: 0;
+}
+
+.controles label {
+    display: block;
+    margin: 1.15rem 0 0.35rem;
+    font-weight: 650;
+}
+
+.controles label:first-of-type {
+    margin-top: 0;
+}
+
+.controles select {
+    width: 9rem;
+}
+
+@media (min-width: 42rem) {
+    #circulo {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .controles {
+        margin-left: 300px;
+    }
+}

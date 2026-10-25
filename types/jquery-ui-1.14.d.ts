@@ -42,6 +42,9 @@ interface ControlgroupOptions {
 
     /** - `desactiva el grupo` */
     disabled?: boolean;
+
+    /** - `widgets que entran en el grupo` */
+    items?: Record<string, string>;
 }
 
 
@@ -77,6 +80,96 @@ declare namespace JQueryUI {
         /** - `muestra el texto del botón` */
         showLabel?: boolean;
     }
+
+    /**
+     * ------------------------------------------------------
+     * -----  interface  -  `AutocompleteCategoryItem`  -----
+     * ------------------------------------------------------
+     * - `sugerencia con su grupo`
+     */
+    interface AutocompleteCategoryItem {
+
+        /** - `texto de la sugerencia` */
+        label: string;
+
+        /** - `grupo de la sugerencia` */
+        category: string;
+    }
+
+    /**
+     * ----------------------------------------------------
+     * -----  interface  -  `AutocompleteCategories`  -----
+     * ----------------------------------------------------
+     * - `instancia que pinta las sugerencias agrupadas`
+     */
+    interface AutocompleteCategories {
+
+        /** - `lista del menú` */
+        widget(): JQuery<HTMLUListElement>;
+
+        /** - `pinta el menú de sugerencias` */
+        _renderMenu(ul: JQuery<HTMLUListElement>, items: AutocompleteCategoryItem[]): void;
+
+        /** - `pinta una sugerencia y guarda sus datos` */
+        _renderItemData(ul: JQuery<HTMLUListElement>, item: AutocompleteCategoryItem): JQuery;
+    }
+
+    /**
+     * ----------------------------------------------------
+     * -----  interface  -  `AutocompleteCustomItem`  -----
+     * ----------------------------------------------------
+     * - `sugerencia con descripción`
+     */
+    interface AutocompleteCustomItem {
+
+        /** - `texto de la sugerencia` */
+        label: string;
+
+        /** - `texto secundario` */
+        desc: string;
+    }
+
+    /**
+     * ----------------------------------------------------
+     * -----  interface  -  `AutocompleteCustomData`  -----
+     * ----------------------------------------------------
+     * - `instancia que pinta nombre y descripción`
+     */
+    interface AutocompleteCustomData {
+
+        /** - `pinta una sugerencia` */
+        _renderItem(ul: JQuery<HTMLUListElement>, item: AutocompleteCustomItem): JQuery;
+    }
+
+    /**
+     * --------------------------------------------
+     * -----  interface  -  `SelectMenuItem`  -----
+     * --------------------------------------------
+     * - `opción pintada en el menú`
+     */
+    interface SelectMenuItem {
+
+        /** - `texto de la opción` */
+        label: string;
+
+        /** - `opción desactivada` */
+        disabled?: boolean;
+
+        /** - `opción original` */
+        element: JQuery;
+    }
+
+    /**
+     * -------------------------------------------------
+     * -----  interface  -  `SelectMenuRendering`  -----
+     * -------------------------------------------------
+     * - `instancia que pinta cada opción`
+     */
+    interface SelectMenuRendering {
+
+        /** - `pinta una opción` */
+        _renderItem(ul: JQuery<HTMLUListElement>, item: SelectMenuItem): JQuery;
+    }
 }
 
 
@@ -94,4 +187,13 @@ interface JQuery {
 
     /** - `llama a un método de controlgroup` */
     controlgroup(methodName: "destroy" | "refresh" | "widget"): this;
+
+    /** - `devuelve la instancia del autocompletado` */
+    autocomplete(methodName: "instance"): JQueryUI.AutocompleteCategories | JQueryUI.AutocompleteCustomData;
+
+    /** - `devuelve la instancia del menú` */
+    selectmenu(methodName: "instance"): JQueryUI.SelectMenuRendering;
+
+    /** - `cierra la ayuda del elemento indicado` */
+    tooltip(methodName: "close", evento: { currentTarget: HTMLElement }): this;
 }

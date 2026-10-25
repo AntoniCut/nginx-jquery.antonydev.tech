@@ -1,0 +1,16 @@
+/*
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  01-checkboxradio-default.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/04-checkboxradio/01-checkboxradio-default.css  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.escenario fieldset {
+    margin: 0 0 1rem;
+    padding: 0.85rem 1rem 0.35rem;
+    border: 1px solid #d7dee7;
+    border-radius: 0.75rem;
+}
+
+.escenario label {
+    margin: 0 0.45rem 0.7rem 0;
+}

@@ -19,7 +19,7 @@
     <title>Varios deslizadores</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/60-slider-multiple.css">
+    <link rel="stylesheet" href="../../assets/css/11-slider/04-slider-multiple.css">
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
 </head>
 
@@ -35,16 +35,26 @@
             <div id="brillo"></div>
             <p class="eje"><label for="zoom">Zoom</label><span id="valor-zoom">100</span></p>
             <div id="zoom"></div>
+            <p class="eje"><span>Ecualizador</span></p>
+            <div id="ecualizador" class="ecualizador">
+                <span data-valor="88"></span>
+                <span data-valor="77"></span>
+                <span data-valor="55"></span>
+                <span data-valor="33"></span>
+                <span data-valor="40"></span>
+                <span data-valor="45"></span>
+                <span data-valor="70"></span>
+            </div>
         </div>
 
         <div class="demo-description">
-            <p>Volumen, brillo y zoom son tres deslizadores independientes.</p>
+            <p>Volumen, brillo y zoom son tres deslizadores horizontales. El ecualizador usa deslizadores verticales.</p>
         </div>
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../assets/js/60-slider-multiple.js"></script>
+    <script src="../../assets/js/11-slider/04-slider-multiple.js"></script>
 </body>
 
 </html>

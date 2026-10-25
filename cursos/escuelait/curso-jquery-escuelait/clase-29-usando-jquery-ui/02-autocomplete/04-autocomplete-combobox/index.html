@@ -19,7 +19,7 @@
     <title>Lista combinada</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/10-autocomplete-combobox.css">
+    <link rel="stylesheet" href="../../assets/css/02-autocomplete/04-autocomplete-combobox.css">
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
 </head>
 
@@ -30,7 +30,7 @@
 
         <div class="escenario">
             <p class="campo">
-                <label for="lenguaje">Lenguaje</label>
+                <label for="lenguaje">Lenguaje preferido</label>
                 <select id="lenguaje">
                     <option value="">Elige uno</option>
                     <option value="java">Java</option>
@@ -40,16 +40,19 @@
                     <option value="ruby">Ruby</option>
                 </select>
             </p>
+            <p class="mostrar-select">
+                <button type="button" id="mostrar-select">Mostrar el select</button>
+            </p>
         </div>
 
         <div class="demo-description">
-            <p>Un <code>select</code> se convierte en un campo que filtra y un botón que muestra todas las opciones.</p>
+            <p>Escribe <code>py</code> para elegir Python, o <code>ja</code> para ver Java y JavaScript. El botón pegado al campo abre la lista entera. <code>Mostrar el select</code> enseña la lista original. Si el texto no coincide, el campo se vacía.</p>
         </div>
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../assets/js/10-autocomplete-combobox.js"></script>
+    <script src="../../assets/js/02-autocomplete/04-autocomplete-combobox.js"></script>
 </body>
 
 </html>

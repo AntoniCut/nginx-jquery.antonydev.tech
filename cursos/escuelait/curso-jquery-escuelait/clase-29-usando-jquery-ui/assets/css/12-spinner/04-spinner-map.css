@@ -1,0 +1,27 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  04-spinner-map.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/12-spinner/04-spinner-map.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.coordenadas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem 1.25rem;
+}
+
+.campo {
+    margin: 0;
+}
+
+.campo input {
+    width: 7rem;
+}
+
+#mapa {
+    display: block;
+    width: 100%;
+    height: 22rem;
+    margin-top: 1rem;
+    border: 0;
+}

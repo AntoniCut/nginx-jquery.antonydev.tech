@@ -19,7 +19,7 @@
     <title>Selección de producto</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/56-selectmenu-product.css">
+    <link rel="stylesheet" href="../../assets/css/10-selectmenu/03-selectmenu-product.css">
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
 </head>
 
@@ -29,26 +29,36 @@
         <h1>Selección de producto</h1>
 
         <div class="escenario">
-            <p class="campo">
-                <label for="producto">Producto</label>
-                <select id="producto">
-                    <option data-desc="Biblioteca para recorrer el DOM">jQuery</option>
-                    <option data-desc="Widgets, interacciones y efectos" selected>jQuery UI</option>
-                    <option data-desc="Motor de selectores">Sizzle</option>
-                    <option data-desc="Pruebas en el navegador">QUnit</option>
+            <div id="circulo"></div>
+            <fieldset class="controles">
+                <label for="radio">Radio del círculo</label>
+                <select id="radio">
+                    <option value="50px">50px</option>
+                    <option value="100px">100px</option>
+                    <option value="150px" selected>150px</option>
+                    <option value="200px">200px</option>
+                    <option value="250px">250px</option>
                 </select>
-            </p>
-            <p id="resultado" class="nota">Producto: jQuery UI.</p>
+
+                <label for="color">Color del círculo</label>
+                <select id="color">
+                    <option value="black">Negro</option>
+                    <option value="red">Rojo</option>
+                    <option value="yellow" selected>Amarillo</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+                </select>
+            </fieldset>
         </div>
 
         <div class="demo-description">
-            <p>Cada opción muestra el nombre y una descripción. El campo se queda con el producto elegido.</p>
+            <p>Los menús cambian el radio y el color del círculo.</p>
         </div>
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../assets/js/56-selectmenu-product.js"></script>
+    <script src="../../assets/js/10-selectmenu/03-selectmenu-product.js"></script>
 </body>
 
 </html>

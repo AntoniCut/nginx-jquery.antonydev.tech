@@ -19,7 +19,7 @@
     <title>Reproductor</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/87-tooltip-player.css">
+    <link rel="stylesheet" href="../../assets/css/14-tooltip/07-tooltip-player.css">
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
 </head>
 
@@ -29,21 +29,41 @@
         <h1>Reproductor</h1>
 
         <div class="escenario">
-            <section id="reproductor">
-                <h2>Paseo por la ciudad</h2>
-                <div id="linea" title="0:00"></div>
-                <p id="marca">0:00</p>
-            </section>
+            <div class="pantalla">Aquí va el vídeo (¿HTML5?)</div>
+            <div class="herramientas">
+                <span class="grupo">
+                    <button type="button" data-icon="ui-icon-circle-arrow-n" title="Esto me gusta">Me gusta</button>
+                    <button type="button" data-icon="ui-icon-circle-arrow-s">Esto no me gusta</button>
+                </span>
+                <div class="grupo">
+                    <button type="button" data-icon="ui-icon-circle-plus" title="Añadir para ver más tarde">Añadir</button>
+                    <button type="button" class="menu" data-icon="ui-icon-triangle-1-s">Añadir a favoritos o a una lista</button>
+                    <ul id="listas">
+                        <li>
+                            <div>Favoritos</div>
+                        </li>
+                        <li>
+                            <div>Graciosos</div>
+                        </li>
+                        <li></li>
+                        <li>
+                            <div>Nueva lista…</div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" title="Compartir este vídeo">Compartir</button>
+                <button type="button" data-icon="ui-icon-alert">Marcar como inapropiado</button>
+            </div>
         </div>
 
         <div class="demo-description">
-            <p>Al recorrer la línea de tiempo, la ayuda muestra el minuto correspondiente. No hay un archivo de vídeo: la marca se calcula con la posición del puntero.</p>
+            <p>Un reproductor falso, con botones de me gusta, compartir y aviso. La ayuda de cada botón usa un estilo propio.</p>
         </div>
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../assets/js/87-tooltip-player.js"></script>
+    <script src="../../assets/js/14-tooltip/07-tooltip-player.js"></script>
 </body>
 
 </html>

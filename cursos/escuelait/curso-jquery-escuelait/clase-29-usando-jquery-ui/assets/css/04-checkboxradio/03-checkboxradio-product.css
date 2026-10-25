@@ -1,0 +1,59 @@
+/*
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  03-checkboxradio-product.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/04-checkboxradio/03-checkboxradio-product.css  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.controls {
+    max-width: 100%;
+    padding: 1em;
+    display: inline-block;
+    background: #ccc;
+}
+
+.controls h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 650;
+}
+
+.shape {
+    margin-left: 4em;
+    margin-top: 2.5em;
+    height: 8em;
+    width: 8em;
+    box-shadow: 4px 4px 8px;
+    color: #ccc;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 50%;
+}
+
+.circle,
+.pill {
+    border-radius: 8em;
+}
+
+.pill,
+.rectangle {
+    width: 16em;
+}
+
+.square,
+.circle {
+    margin-left: 9em;
+}
+
+.border {
+    border: 2px solid #333333;
+}
+
+.toggles {
+    width: 200px;
+}
+
+.toggle-wrap,
+.shape {
+    display: inline-block;
+    vertical-align: top;
+}

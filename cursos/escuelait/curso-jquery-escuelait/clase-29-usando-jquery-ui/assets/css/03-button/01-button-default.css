@@ -1,0 +1,21 @@
+/*
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  01-button-default.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/03-button/01-button-default.css  -----  *
+    *  ------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.escenario h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.05rem;
+}
+
+.escenario section + section {
+    margin-top: 1.25rem;
+}
+
+.escenario .ui-button,
+.escenario button,
+.escenario input,
+.escenario a.ui-button {
+    margin: 0 0.5rem 0.5rem 0;
+}

@@ -19,7 +19,7 @@
     <title>Mapa</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/71-spinner-map.css">
+    <link rel="stylesheet" href="../../assets/css/12-spinner/04-spinner-map.css">
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
 </head>
 
@@ -29,24 +29,27 @@
         <h1>Mapa</h1>
 
         <div class="escenario">
-            <p class="campo">
-                <label for="latitud">Latitud</label>
-                <input id="latitud" value="40.4">
-            </p>
-            <p class="campo">
-                <label for="longitud">Longitud</label>
-                <input id="longitud" value="-3.7">
-            </p>
+            <div class="coordenadas">
+                <p class="campo">
+                    <label for="latitud">Latitud</label>
+                    <input id="latitud" value="40.4">
+                </p>
+                <p class="campo">
+                    <label for="longitud">Longitud</label>
+                    <input id="longitud" value="-3.7">
+                </p>
+            </div>
+            <iframe id="mapa" title="Mapa de Google" src="https://maps.google.com/maps?q=40.4,-3.7&z=8&hl=es&output=embed"></iframe>
         </div>
 
         <div class="demo-description">
-            <p>Latitud y longitud tienen sus propios límites. La latitud va de −90 a 90 y la longitud de −180 a 180.</p>
+            <p>Latitud y longitud mueven el centro del mapa de Google. La latitud va de −90 a 90 y la longitud de −180 a 180.</p>
         </div>
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../assets/js/71-spinner-map.js"></script>
+    <script src="../../assets/js/12-spinner/04-spinner-map.js"></script>
 </body>
 
 </html>

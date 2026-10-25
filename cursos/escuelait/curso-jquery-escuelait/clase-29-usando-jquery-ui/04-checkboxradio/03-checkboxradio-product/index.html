@@ -19,7 +19,7 @@
     <title>Selector de producto</title>
     <link rel="stylesheet" href="/assets/libs/jquery-ui/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/23-checkboxradio-product.css">
+    <link rel="stylesheet" href="../../assets/css/04-checkboxradio/03-checkboxradio-product.css">
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/js/url.js"></script>
 </head>
 
@@ -29,40 +29,60 @@
         <h1>Selector de producto</h1>
 
         <div class="escenario">
-            <fieldset>
-                <legend>Color</legend>
-                <label for="azul">Azul</label>
-                <input type="radio" name="color" id="azul" value="azul" checked>
-                <label for="verde">Verde</label>
-                <input type="radio" name="color" id="verde" value="verde">
-                <label for="negro">Negro</label>
-                <input type="radio" name="color" id="negro" value="negro">
-            </fieldset>
-            <fieldset>
-                <legend>Talla</legend>
-                <label for="s">S</label>
-                <input type="radio" name="talla" id="s" value="S">
-                <label for="m">M</label>
-                <input type="radio" name="talla" id="m" value="M" checked>
-                <label for="l">L</label>
-                <input type="radio" name="talla" id="l" value="L">
-            </fieldset>
-            <fieldset>
-                <legend>Extra</legend>
-                <label for="regalo">Envoltorio</label>
-                <input type="checkbox" id="regalo">
-            </fieldset>
-            <p id="resumen" class="nota">Camiseta azul, talla M, sin envoltorio.</p>
+            <div class="controls">
+                <div class="brand-wrap">
+                    <h2>1.) Select a brand</h2>
+                    <div class="brand">
+                        <label for="brand-jquery">jQuery</label>
+                        <input type="radio" name="brand" id="brand-jquery" data-background-color="#0769AD" data-color="#7ACEF4" data-background-image="url(images/jquery.png)">
+                        <label for="brand-jquery-ui">jQuery UI</label>
+                        <input type="radio" name="brand" id="brand-jquery-ui" data-background-color="#B24926" data-color="#FAA523" data-background-image="url(images/jquery-ui.png)" checked>
+                        <label for="brand-jquery-mobile">jQuery Mobile</label>
+                        <input type="radio" name="brand" id="brand-jquery-mobile" data-background-color="#108040" data-color="#3EB249" data-background-image="url(images/jquery-mobile.png)">
+                        <label for="brand-sizzle">Sizzle</label>
+                        <input type="radio" name="brand" id="brand-sizzle" data-background-color="#9A1B1E" data-color="#FAA523" data-background-image="url(images/sizzle.png)">
+                        <label for="brand-qunit">QUnit</label>
+                        <input type="radio" name="brand" id="brand-qunit" data-background-color="#390F39" data-color="#9C3493" data-background-image="url(images/qunit.png)">
+                    </div>
+                </div>
+                <div class="shape-wrap">
+                    <h2>2.) Select a shape</h2>
+                    <div class="shape-bar">
+                        <label for="shape-circle">Circle</label>
+                        <input type="radio" name="shape" id="shape-circle" value="circle" checked>
+                        <label for="shape-square">Square</label>
+                        <input type="radio" name="shape" id="shape-square" value="square">
+                        <label for="shape-pill">Pill</label>
+                        <input type="radio" name="shape" id="shape-pill" value="pill">
+                        <label for="shape-rectangle">Rectangle</label>
+                        <input type="radio" name="shape" id="shape-rectangle" value="rectangle">
+                    </div>
+                </div>
+                <div class="toggle-wrap">
+                    <h2>3.) Customize</h2>
+                    <div class="toggles">
+                        <label for="color">Shadow</label>
+                        <input class="toggle brand-toggle" type="checkbox" name="color" id="color">
+                        <label for="border">Border</label>
+                        <input class="toggle" type="checkbox" name="border" id="border">
+                        <label for="background-color">Background</label>
+                        <input class="toggle brand-toggle" type="checkbox" name="background-color" id="background-color" checked>
+                        <label for="background-image">Background Image</label>
+                        <input class="toggle brand-toggle" type="checkbox" name="background-image" id="background-image" checked>
+                    </div>
+                </div>
+                <div class="shape circle"></div>
+            </div>
         </div>
 
         <div class="demo-description">
-            <p>Color, talla y envoltorio actualizan el resumen al cambiar la selección.</p>
+            <p>Elige marca y forma con los radios. Las casillas activan la sombra, el borde, el fondo y el logo. El recuadro de la derecha muestra la combinación.</p>
         </div>
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="/assets/libs/jquery-ui/jquery-ui-1.14.2.min.js"></script>
-    <script src="../../assets/js/23-checkboxradio-product.js"></script>
+    <script src="../../assets/js/04-checkboxradio/03-checkboxradio-product.js"></script>
 </body>
 
 </html>

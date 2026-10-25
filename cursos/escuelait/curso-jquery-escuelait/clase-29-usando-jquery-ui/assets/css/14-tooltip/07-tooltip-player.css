@@ -1,0 +1,66 @@
+/*
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------  *
+    *  -----  07-tooltip-player.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-29-usando-jquery-ui/assets/css/14-tooltip/07-tooltip-player.css  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------------------------------------------  *
+*/
+
+.pantalla {
+    display: grid;
+    place-items: center;
+    width: min(500px, 100%);
+    height: 300px;
+    border: 2px groove #808080;
+    background: #cccccc;
+    text-align: center;
+}
+
+.herramientas {
+    margin-top: 0.65rem;
+}
+
+.grupo {
+    display: inline-block;
+    margin: 0 0.35rem 0.35rem 0;
+    vertical-align: middle;
+}
+
+.herramientas > button {
+    margin: 0 0.35rem 0.35rem 0;
+    vertical-align: middle;
+}
+
+#listas {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    width: max-content;
+}
+
+.ui-tooltip.ui-widget.ui-widget-content {
+    border: 1px solid #ffffff;
+    background: #111111;
+    color: #ffffff;
+}
+
+.aviso {
+    position: absolute;
+    z-index: 10000;
+    display: inline-block;
+    max-width: calc(100% - 2rem);
+    padding: 0.5em;
+    font-size: 1.25rem;
+    text-align: center;
+    box-shadow: 2px 2px 5px -2px rgb(0 0 0 / 35%);
+}
+
+@media (min-width: 48rem) {
+    .aviso {
+        font-size: 2em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aviso {
+        box-shadow: none;
+    }
+}
