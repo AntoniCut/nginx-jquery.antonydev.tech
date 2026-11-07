@@ -1,0 +1,88 @@
+<!--
+    *  ----------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/04-eventos/index.html  -----  *
+    *  ----------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/04-eventos.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Práctica 2</a>
+        <h1>Eventos</h1>
+
+        <form class="ficha" id="contacto" action="../assets/php/guardar-con-json.php" method="post">
+            <section class="campos">
+                <h2>Contacto</h2>
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" autocomplete="name">
+                </label>
+                <label>
+                    Email
+                    <input type="text" name="email" autocomplete="email" inputmode="email">
+                </label>
+                <label>
+                    Teléfono
+                    <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
+                </label>
+                <label>
+                    Dirección
+                    <input type="text" name="direccion" autocomplete="street-address">
+                </label>
+                <button type="submit">Guardar</button>
+            </section>
+            <section class="mensaje" id="mensaje">
+                <p>Actualización de contactos</p>
+            </section>
+        </form>
+
+        <form class="ficha" id="f2" action="../assets/php/guardar-con-json.php" method="post">
+            <section class="campos">
+                <h2>Contacto</h2>
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" autocomplete="name">
+                </label>
+                <label>
+                    Email
+                    <input type="text" name="email" autocomplete="email" inputmode="email">
+                </label>
+                <label>
+                    Teléfono
+                    <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
+                </label>
+                <label>
+                    Dirección
+                    <input type="text" name="direccion" autocomplete="street-address">
+                </label>
+                <button type="submit">Guardar</button>
+            </section>
+        </form>
+
+        <div class="demo-description">
+            <p>El primer formulario escucha <code>comienzoenvio</code> y <code>finalizoenvio</code>: baja la opacidad mientras envía y espera 6 segundos. El segundo espera 10 segundos y crea su propio mensaje.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="../assets/js/04-eventos.js"></script>
+</body>
+
+</html>

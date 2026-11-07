@@ -1,0 +1,65 @@
+<!--
+    *  ---------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/03-autoguardado/index.html  -----  *
+    *  ---------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Autoguardado</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/03-autoguardado.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Práctica 2</a>
+        <h1>Autoguardado</h1>
+
+        <form class="ficha" id="contacto" action="../assets/php/guardar-con-json.php" method="post">
+            <section class="campos">
+                <h2>Contacto</h2>
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" autocomplete="name">
+                </label>
+                <label>
+                    Email
+                    <input type="text" name="email" autocomplete="email" inputmode="email">
+                </label>
+                <label>
+                    Teléfono
+                    <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
+                </label>
+                <label>
+                    Dirección
+                    <input type="text" name="direccion" autocomplete="street-address">
+                </label>
+                <button type="submit">Guardar</button>
+            </section>
+            <section class="mensaje" id="mensaje">
+                <p>Actualización de contactos</p>
+            </section>
+        </form>
+
+        <div class="demo-description">
+            <p>A los 6 segundos el formulario se envía solo. Si envías antes, esa espera se cancela y vuelve a contarse al terminar.</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="../assets/js/03-autoguardado.js"></script>
+</body>
+
+</html>

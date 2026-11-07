@@ -1,0 +1,65 @@
+<!--
+    *  -------------------------------------------------------------------------------------------------------------------  *
+    *  -----  index.html  --  /cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/01-envio-html/index.html  -----  *
+    *  -------------------------------------------------------------------------------------------------------------------  *
+-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @view-transition {
+            navigation: auto;
+            /* */
+        }
+    </style>
+    <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
+    <title>Envío en texto</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/01-envio-html.css">
+    <script src="/cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/assets/js/url.js"></script>
+</head>
+
+<body>
+    <main>
+        <a class="volver" href="../">Práctica 2</a>
+        <h1>Envío en texto</h1>
+
+        <form class="ficha" id="contacto" action="../assets/php/guardar.php" method="post">
+            <section class="campos">
+                <h2>Contacto</h2>
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" autocomplete="name">
+                </label>
+                <label>
+                    Email
+                    <input type="text" name="email" autocomplete="email" inputmode="email">
+                </label>
+                <label>
+                    Teléfono
+                    <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
+                </label>
+                <label>
+                    Dirección
+                    <input type="text" name="direccion" autocomplete="street-address">
+                </label>
+                <button type="submit">Guardar</button>
+            </section>
+            <section class="mensaje" id="mensaje">
+                <p>Actualización de contactos</p>
+            </section>
+        </form>
+
+        <div class="demo-description">
+            <p>El plugin intercepta el envío, pide el PHP y escribe la respuesta en el mensaje. El PHP siempre responde «Todo correcto».</p>
+        </div>
+    </main>
+
+    <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
+    <script src="../assets/js/01-envio-html.js"></script>
+</body>
+
+</html>

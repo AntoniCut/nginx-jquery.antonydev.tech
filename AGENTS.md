@@ -10,6 +10,7 @@ Lee `README.md` para el mapa de carpetas. Aquí va cómo se edita.
 - Las clases 18 y 19 de EscuelaIT siguen el patrón de carpeta por ejercicio. Las clases 20 a 27 conservan el HTML original; no las reestructures salvo que se pida.
 - Las clases 6 y 7 guardan el CSS y el JS de cada ejemplo en `assets/css/` y `assets/js/` de la clase (`ejemplo-01.css`, `ejemplo-01.js`), y el PDF en `assets/pdf/`. Cada ejemplo solo tiene `index.html`.
 - La clase 28, `clase-28-libreria-de-componentes-jquery-ui`, guarda el CSS y el JS de cada ejercicio en `assets/css/` y `assets/js/` de la clase, con el nombre numerado del ejercicio. Cada ejercicio solo tiene `index.html`. jQuery, jQuery UI y el tema base se cargan desde `/assets/libs/`.
+- La clase 30, `clase-30-practica-2`, guarda el CSS y el JS de cada versión del plugin en `assets/css/` y `assets/js/` de la clase. Cada ejercicio solo tiene `index.html`. El PHP compartido vive en `assets/php/`. jQuery se carga desde `/assets/libs/`.
 - `cursos/desarrollowebcom` es un repositorio git anidado. No lo commitees desde este repo.
 - `workflow/` está en `.gitignore`. No lo añadas al commit.
 - No añadas dependencias npm ni un sistema de build salvo que se pida. jQuery y Handlebars ya están en `assets/libs/`.
