@@ -320,7 +320,7 @@ declare global {
      * -----------------------------------------
      * -----  interface `SmartformAjuste`  -----
      * -----------------------------------------
-     * Url, capa y método guardados en cada formulario.
+     * Url, capa, método y modo de respuesta guardados en cada formulario.
      */
     interface SmartformAjuste {
         /** Dirección de envío de ese formulario. */
@@ -329,7 +329,9 @@ declare global {
         capa: JQuery;
         /** `get` o `post`. */
         metodo: "get" | "post";
-        /** Espera del autoguardado, en segundos. */
+        /** `true` en la fase 1: la respuesta se escribe como texto. */
+        texto: boolean;
+        /** Espera del autoguardado, en segundos. Solo si la llamada pasó `segundos`. */
         segundos?: number;
     }
 
