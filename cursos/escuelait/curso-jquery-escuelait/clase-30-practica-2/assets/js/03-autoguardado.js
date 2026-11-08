@@ -34,11 +34,10 @@
             $lista.append($item);
         });
 
-        //  -----  vaciar la capa  -----
-        capa.empty();
-
-        //  -----  mostrar la lista  -----
-        capa.append($lista);
+        //  -----  vaciar la capa y mostrar la lista  -----
+        capa
+            .empty()
+            .append($lista);
     };
 
 
@@ -124,21 +123,36 @@
                 formulario.find(":submit").prop("disabled", false);
 
                 //  -----  volver a contar la espera  -----
-                programar(formulario);
+                autosave(formulario);
             }
         });
     };
 
 
     /**
-     * -------------------------------------
-     * -----  `programar(formulario)`  -----
-     * -------------------------------------
+     * ------------------------------------
+     * -----  `autosave(formulario)`  -----
+     * ------------------------------------
      * - Deja un envío pendiente con los segundos de ese formulario.
+     * - Si el checkbox está apagado, cancela la espera y no arma otra.
      * @param {JQuery<HTMLFormElement>} formulario - Formulario que se enviará solo.
      * @return {void}
      */
-    const programar = (formulario) => {
+    const autosave = (formulario) => {
+
+        /** @type {number | undefined} - `espera que ya estaba pendiente` */
+        const previo = formulario.data("retardo");
+
+        //  -----  una sola espera por formulario  -----
+        window.clearTimeout(previo);
+
+        /** @type {JQuery<HTMLInputElement>} - `interruptor del autoguardado` */
+        const interruptor = /** @type {JQuery<HTMLInputElement>} */ (formulario.find("[name='autosave']"));
+
+        //  -----  apagado: no dejar otra espera  -----
+        if (interruptor.length && !interruptor.prop("checked")) {
+            return;
+        }
 
         /** @type {SmartformAjuste} - `ajustes guardados en el formulario` */
         const ajuste = formulario.data("smartform");
@@ -148,6 +162,7 @@
 
             //  -----  enviar cuando vence la espera  -----
             enviar(formulario);
+
         }, Number(ajuste.segundos) * 1000);
 
         //  -----  recordar la espera para poder cancelarla  -----
@@ -252,8 +267,15 @@
                 enviar($elem);
             });
 
+            //  -----  encender o apagar la espera con el checkbox  -----
+            $elem.on("change", "[name='autosave']", () => {
+
+                //  -----  armar la espera, o cancelarla si quedó apagado  -----
+                autosave($elem);
+            });
+
             //  -----  dejar el primer autoguardado pendiente  -----
-            programar($elem);
+            autosave($elem);
         });
 
         //  -----  permitir encadenar la colección  -----

@@ -15,51 +15,79 @@
             /* */
         }
     </style>
+    
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
     <title>Opciones</title>
+    
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/02-opciones.css">
+    
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/assets/js/url.js"></script>
+
 </head>
 
 <body>
+    
     <main>
+        
         <a class="volver" href="../">Práctica 2</a>
+        
         <h1>Opciones</h1>
 
         <form class="ficha" id="contacto" action="../assets/php/guardar-con-json.php" method="post">
+            
             <section class="campos">
+                
                 <h2>Contacto</h2>
+                
                 <label>
                     Nombre
                     <input type="text" name="nombre" autocomplete="name">
                 </label>
+                
                 <label>
                     Email
                     <input type="text" name="email" autocomplete="email" inputmode="email">
                 </label>
+                
                 <label>
                     Teléfono
                     <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
                 </label>
+                
                 <label>
                     Dirección
                     <input type="text" name="direccion" autocomplete="street-address">
                 </label>
+                
                 <button type="submit">Guardar</button>
             </section>
+
             <section class="mensaje" id="mensaje">
                 <p>Actualización de contactos</p>
             </section>
+
         </form>
 
         <div class="demo-description">
-            <p>La url sale del <code>action</code>. La capa de mensaje y el método se pasan como opciones. Si falta un campo, el mensaje lista el fallo.</p>
+            <h2>Fase 2</h2>
+            <p>Como segunda fase hacemos lo mismo que la fase 1, pero le agregamos validación. El plugin convierte un formulario normal en un formulario Ajax con validación. El formulario se envía al servidor, que devuelve un JSON con un formato como este:</p>
+            <pre><code>{ "valido": true }</code></pre>
+            <p>Si el formulario no era válido:</p>
+            <pre><code>{
+    "valido": false,
+    "errores": "&lt;ul&gt;&lt;li&gt;No has indicado el nombre&lt;/li&gt;&lt;li&gt;No has indicado el email&lt;/li&gt;&lt;/ul&gt;"
+}</code></pre>
+            <p>Las validaciones dan igual. La idea es procesar ese JSON en el cliente con jQuery.</p>
+            <p>Al invocarlo, el plugin puede recibir <code>url</code>, <code>capaMensaje</code> y <code>metodo</code>. <code>url</code> es la dirección de envío. <code>capaMensaje</code> es la capa del mensaje de carga y de la respuesta, válida o con errores. Por defecto <code>url</code> y <code>capaMensaje</code> valen <code>false</code> y <code>metodo</code> vale <code>post</code>. Si <code>url</code> es <code>false</code>, se usa el <code>action</code> del formulario. Si <code>capaMensaje</code> es <code>false</code>, el plugin crea un elemento, lo inserta dentro del formulario y muestra ahí los mensajes. <code>metodo</code> solo puede ser <code>post</code> o <code>get</code>; cualquier otro valor queda en <code>post</code>.</p>
+            <p>En esta página la url sale del <code>action</code>. La capa de mensaje y el método se pasan como opciones. Si falta un campo, el mensaje lista el fallo.</p>
         </div>
+
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="../assets/js/02-opciones.js"></script>
+    
 </body>
 
 </html>

@@ -15,74 +15,114 @@
             /* */
         }
     </style>
+    
     <link rel="shortcut icon" href="/assets/favicon/jquery-favicon.svg" type="image/svg+xml">
     <title>Eventos</title>
+    
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/04-eventos.css">
+    
     <script src="/cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/assets/js/url.js"></script>
+
 </head>
 
 <body>
+    
     <main>
+        
         <a class="volver" href="../">Práctica 2</a>
+        
         <h1>Eventos</h1>
 
         <form class="ficha" id="contacto" action="../assets/php/guardar-con-json.php" method="post">
+            
             <section class="campos">
+                
                 <h2>Contacto</h2>
+                
                 <label>
                     Nombre
                     <input type="text" name="nombre" autocomplete="name">
                 </label>
+                
                 <label>
                     Email
                     <input type="text" name="email" autocomplete="email" inputmode="email">
                 </label>
+                
                 <label>
                     Teléfono
                     <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
                 </label>
+                
                 <label>
                     Dirección
                     <input type="text" name="direccion" autocomplete="street-address">
                 </label>
+
+                <label class="autosave">
+                    Autoguardado
+                    <input type="checkbox" name="autosave" checked>
+                </label>
+                
                 <button type="submit">Guardar</button>
             </section>
+
             <section class="mensaje" id="mensaje">
                 <p>Actualización de contactos</p>
             </section>
+
         </form>
 
         <form class="ficha" id="f2" action="../assets/php/guardar-con-json.php" method="post">
+            
             <section class="campos">
+                
                 <h2>Contacto</h2>
+                
                 <label>
                     Nombre
                     <input type="text" name="nombre" autocomplete="name">
                 </label>
+                
                 <label>
                     Email
                     <input type="text" name="email" autocomplete="email" inputmode="email">
                 </label>
+                
                 <label>
                     Teléfono
                     <input type="text" name="telefono" autocomplete="tel" inputmode="tel">
                 </label>
+                
                 <label>
                     Dirección
                     <input type="text" name="direccion" autocomplete="street-address">
                 </label>
+
+                <label class="autosave">
+                    Autoguardado
+                    <input type="checkbox" name="autosave" checked>
+                </label>
+                
                 <button type="submit">Guardar</button>
+
             </section>
+
         </form>
 
         <div class="demo-description">
-            <p>El primer formulario escucha <code>comienzoenvio</code> y <code>finalizoenvio</code>: baja la opacidad mientras envía y espera 6 segundos. El segundo espera 10 segundos y crea su propio mensaje.</p>
+            <h2>Fase 4</h2>
+            <p>Generar unos eventos personalizados en el plugin, cuando empiece y finalice el envío del formulario por Ajax. Esos eventos se generan con <code>trigger()</code> desde el código del plugin. Desde fuera del plugin, para alguno de los formularios Ajax de la página, se definen dos manejadores de esos eventos, para hacer cosas cuando empieza el envío y cuando finaliza.</p>
+            <p>Como sugerencia, se puede crear una capa overlay en el medio de la pantalla con el símbolo de carga. Cuando comienza el envío se muestra y, cuando finaliza, se oculta.</p>
+            <p>En esta página el primer formulario escucha <code>comienzoenvio</code> y <code>finalizoenvio</code>: baja la opacidad mientras envía y espera 6 segundos. El segundo espera 10 segundos y crea su propio mensaje. Los dos empiezan con el autoguardado activado; si lo desmarcás, se cancela la espera de ese formulario.</p>
         </div>
+
     </main>
 
     <script src="/assets/libs/jquery/jquery-4.0.0.min.js"></script>
     <script src="../assets/js/04-eventos.js"></script>
+    
 </body>
 
 </html>

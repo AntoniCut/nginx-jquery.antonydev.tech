@@ -35,10 +35,10 @@
         });
 
         //  -----  vaciar la capa  -----
-        capa.empty();
-
-        //  -----  mostrar la lista  -----
-        capa.append($lista);
+        capa
+            .empty()
+            //  -----  mostrar la lista  -----
+            .append($lista);
     };
 
 
@@ -127,7 +127,7 @@
                 formulario.find(":submit").prop("disabled", false);
 
                 //  -----  volver a contar la espera  -----
-                programar(formulario);
+                autosave(formulario);
 
                 //  -----  avisar de que el envío terminó  -----
                 formulario.trigger("finalizoenvio");
@@ -137,14 +137,29 @@
 
 
     /**
-     * -------------------------------------
-     * -----  `programar(formulario)`  -----
-     * -------------------------------------
+     * ------------------------------------
+     * -----  `autosave(formulario)`  -----
+     * ------------------------------------
      * - Deja un envío pendiente con los segundos de ese formulario.
+     * - Si el checkbox está apagado, cancela la espera y no arma otra.
      * @param {JQuery<HTMLFormElement>} formulario - Formulario que se enviará solo.
      * @return {void}
      */
-    const programar = (formulario) => {
+    const autosave = (formulario) => {
+
+        /** @type {number | undefined} - `espera que ya estaba pendiente` */
+        const previo = formulario.data("retardo");
+
+        //  -----  una sola espera por formulario  -----
+        window.clearTimeout(previo);
+
+        /** @type {JQuery<HTMLInputElement>} - `interruptor del autoguardado` */
+        const interruptor = /** @type {JQuery<HTMLInputElement>} */ (formulario.find("[name='autosave']"));
+
+        //  -----  apagado: no dejar otra espera  -----
+        if (interruptor.length && !interruptor.prop("checked")) {
+            return;
+        }
 
         /** @type {SmartformAjuste} - `ajustes guardados en el formulario` */
         const ajuste = formulario.data("smartform");
@@ -258,8 +273,15 @@
                 enviar($elem);
             });
 
+            //  -----  encender o apagar la espera con el checkbox  -----
+            $elem.on("change", "[name='autosave']", () => {
+
+                //  -----  armar la espera, o cancelarla si quedó apagado  -----
+                autosave($elem);
+            });
+
             //  -----  dejar el primer autoguardado pendiente  -----
-            programar($elem);
+            autosave($elem);
         });
 
         //  -----  permitir encadenar la colección  -----
@@ -278,6 +300,7 @@ $(() => {
     /** @type {JQuery<HTMLFormElement>} - `formulario que crea su propio mensaje` */
     const $otro = /** @type {JQuery<HTMLFormElement>} */ ($("#f2"));
 
+
     //  -----  activar el primer formulario con su capa y 6 segundos  -----
     $contacto.smartform({
 
@@ -286,21 +309,22 @@ $(() => {
 
         /** - `autoguardado a los 6 segundos` */
         segundos: 6
-    });
+    })
 
-    //  -----  bajar la opacidad al empezar el envío  -----
-    $contacto.on("comienzoenvio", () => {
+        //  -----  bajar la opacidad al empezar el envío  -----
+        .on("comienzoenvio", () => {
 
-        //  -----  el formulario queda en segundo plano  -----
-        $contacto.css("opacity", "0.3");
-    });
+            //  -----  el formulario queda en segundo plano  -----
+            $contacto.css("opacity", "0.3");
+        })
 
-    //  -----  recuperar la opacidad al terminar  -----
-    $contacto.on("finalizoenvio", () => {
+        //  -----  recuperar la opacidad al terminar  -----
+        .on("finalizoenvio", () => {
 
-        //  -----  el formulario vuelve a verse entero  -----
-        $contacto.css("opacity", "1");
-    });
+            //  -----  el formulario vuelve a verse entero  -----
+            $contacto.css("opacity", "1");
+        });
+
 
     //  -----  activar el segundo formulario a los 10 segundos  -----
     $otro.smartform({

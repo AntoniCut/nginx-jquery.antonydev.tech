@@ -34,11 +34,10 @@
             $lista.append($item);
         });
 
-        //  -----  vaciar la capa  -----
-        capa.empty();
-
-        //  -----  mostrar la lista  -----
-        capa.append($lista);
+        //  -----  vaciar la capa y mostrar la lista  -----
+        capa
+            .empty()
+            .append($lista);
     };
 
 
@@ -218,6 +217,7 @@
     };
 
 })(jQuery);
+
 
 
 //  -----  iniciar el formulario cuando el dom esté listo  -----

@@ -3,3 +3,19 @@
     *  -----  03-autoguardado.css  --  /cursos/escuelait/curso-jquery-escuelait/clase-30-practica-2/assets/css/03-autoguardado.css  -----  *
     *  ----------------------------------------------------------------------------------------------------------------------------------  *
 */
+
+.campos label.autosave {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    gap: 2rem;
+}
+
+.campos label.autosave input {
+    flex: 0 0 auto;
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+}
